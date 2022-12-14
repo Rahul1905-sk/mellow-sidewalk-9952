@@ -1,8 +1,49 @@
-body {
-    padding: 0;
-    margin: 0;
-}
+*{
+    font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  }
+  
 
-#container{
-    margin: 10px;
-}
+  #navbar2 {
+    margin-top: 50px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     text-transform: uppercase;
+     font-size: 18px;
+     padding: 20px 24px 0px 24px;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+     }
+   
+    #navbar2> div{
+       cursor: pointer;
+       width: 200px;
+       text-align: center;
+       padding-bottom: 10px;
+       border-bottom: 6px solid transparent;
+     }
+
+     #Live_profile,
+     #WOMEN_profile,
+     #Accessories_profile, 
+     #Winter_profile{
+       display: none;
+     }
+    
+     .sale {
+       display: grid;
+       justify-content: center;
+       align-items: center;
+       width: 98%;
+       
+         }
+       .sale div{
+           width: auto;
+          
+           display: grid;
+           justify-content: center;
+           align-items: center;
+           grid-template-columns:repeat(2,1fr);
+       }
+       .sale div img{width: 100%;}

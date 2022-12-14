@@ -198,13 +198,6 @@ function navbar()
     
 </div>
 <hr>
-<div id="nav_bar_manu">
-    <li><a href=""><P>LIVE NOW!</P></a></li>
-    <li><a href=""><P>MEN</P></a></li>
-    <li><a href=""><P>WOMEN</P></a></li>
-    <li><a href=""><P>ACCESSORIES</P></a></li>
-    <li><a href=""><P>WINTERWEAR</P></a></li>
-</div>
 `
 }
 

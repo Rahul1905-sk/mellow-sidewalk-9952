@@ -1,25 +1,8 @@
 
 body{
-margin: 0px;
+margin: 5px;
 padding: 0px;
 }
-
-
-
-/* .icon_bag {
-    font-family: icomoon!important;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-} */
-
-/* .icon_bag:before {
-    content: "\E931";
-} */
 
 #cart_logo{
     margin-right: 10px;
@@ -65,7 +48,10 @@ padding: 0px;
     width: 100%;
     justify-content: space-around;
 
-}#logo_menu
+}
+
+
+#logo_menu
 {
     display: flex;
     align-items: center;
@@ -107,14 +93,16 @@ padding: 0px;
 
 #nav_search_bar>li>input
 {
-    width: 320px;
-    
-    background-color:rgb(238, 238, 238);
-    border-radius: 2px;
     font-size: 14px;
-    padding: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(233, 230, 230, 0.837);
+    position: relative;
+    margin-top: 8px;
+    border: 0.5px solid grey;
 
-border: none;
+
 }#nav_search_bar>li>input:hover
 {
 background-color: transparent;

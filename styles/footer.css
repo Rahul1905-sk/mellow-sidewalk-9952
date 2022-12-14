@@ -1,203 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-
-
-*{
-    line-height: 12px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#footer{
-    padding-top: 20px;
-    background-color: #181818;
-}
-
-
-#footer-part {
-    line-height: 20px;
-    padding: 5% 0;
-    width: 100%;
-    height: auto;
-    background-color: black;
-    color: white;
-    font-family: "montserrat", sans-serif;
-}
-
-#customer-section {
-    width: 75%;
-    margin: auto;
-
-
-}
-
-.customer-section-grid a{
-    color: white;
-    text-decoration: none;
-}
-#customer-section>h1{
-   color: #fdd835;
-    
-
-}
-
-.customer-section-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-    margin: auto;
-
-}
-
-
-
-.customer-section-grid h4 {
-    color: #fdd835;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 400;
-}
-
-.customer-section-grid h4+input {
-    border: none;
-    border-bottom: 1px solid yellow;
-    background-color: black;
-    height: 30px;
-}
-
-.customer-section-grid .subscribe-button {
-
-    background-color: yellow;
-    border: none;
-    color: black;
-    height: 30px;
-    width: 100px;
-}
-
-#customer-section-grid p ,.customer-section-grid p  {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    font-family:  sans-serif;
-}
-
-.last-color-section h4 {
-    color:
-        #b2e7ed
-}
-
-#download-the-app-images {
+#footer
+{
+    /* border: 1px solid gold; */
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.863);
+    color:rgb(235, 229, 229);
+    padding-bottom: 100px;
+    justify-content: left;
+    align-items: left;
+
+}
+#footer img{
+    border-radius: 10px;
+}
+.f_contact{
+    /* border: 1px solid gray; */
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 12px;
+    
+}
+#f_logo{
+    color: #ffd700;
+    text-align: left;
+}
+.services{
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.f_custservice,.f_company,.f_connect,.f_policy,.f_pay{
+    /* border: 1px solid gray; */
+    line-height: 1px;
+    width: 20%;
+}
+.f_custservice h2,.f_company h2,.f_connect h2,.f_sbs h2,.f_app h2,.f_pay h2{
+    color: #ffd700;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.f_custservice div,.f_company div,.f_app div,.f_pay div{
+    margin-top: 40px;
+}
+.f_connect>div{
+    width: 100%;
+    margin-top: 30px;
+}
+.f_connect div{
+    margin-bottom: 10px;
+}
+.social{
+    display: flex;
+}
+.social img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.social h3{
+    font-size: 12px;
+}
+.f_sbs{
+    /* border: 1px solid skyblue; */
+    width: 30%;
+    line-height: 1px;
+}
+#sbs_inp{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-top: 30px;
+}
+#sbs_inp>input{
+    width: 60%;
+    border-width: 0px;
+    border:none;
+    border-bottom: 1px solid #ffd700;
+    outline: none;
+    height: 26px;
+    padding-left: 10px;
+    background-color:transparent;
+    color: gray;
+    /* text-align: center; */
+}
+#sbs_head{
+    background-color: #ffd700;
+    height: 27px;
+    padding: 0px 20px 0px 20px;
+    /* padding-top: 5px; */
+}
+#sbs_head h2{
+    color: black;
+    font-size: 12px;
+}
+.f_policy div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.f_policy h3{
+    font-size: 12px;
+    font-weight: normal;
+}
+.f_policy div>img{
+    width: 25px;
+    height: 25px;
+}
+.f_app{
+    /* border: 1px solid skyblue; */
+    width: 30%;
+    line-height: 1px;
+}
+.f_app>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+hr{
+    color: white;
     width: 80%;
 }
 
-#download-the-app-images>div {
-
-    flex: 1;
-    height: 30px;
-    margin: 2px;
-
+/* f Categories */
+#f_cate{
+    /* border: 1px solid blue; */
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+#f_cate>div{
+    margin-top: 20px;
+}
+#f_cate>div h2{
+    margin-bottom: 30px;
+}
+.f_mens,.f_womens,.f_accessories{
+    line-height: 1px;
+}
+.f_mens div,.f_womens div,.f_accessories div{
+    /* border: 1px solid blue; */
+    margin-bottom: 30px;
+}
+#fblue{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+#fblue h1{
+    margin-bottom: -10px;
+}
+#fblue a{
+    text-decoration: none;
+    color: #51cccc;
+    font-size: 20px;
 }
 
-#download-the-app-images>div img {
-    width: 100%;
-    height: 100%;
+/* f00teer */
+#f_desc{
+    /* border: 1px solid orange; */
+    width: 80%;
+    color: rgb(224, 218, 218);
+    padding-bottom: 100px;
+    margin: auto;
 }
-
-#footer-last-section-para p,#footer-last-section-para h3{
-
-    font-family: "montserrat", sans-serif;;
-
-font-weight: 400;
-font-size: 15px;
-line-height: 20px;
-color: rgba(255, 255, 255, 0.9);
-
-}
-#footer-last-section-para h3{
-
-    font-family: "montserrat", sans-serif;;
-
-    font-weight: 700;
-    font-size: 17px;
-  
-    
-    }
-
-/* footer part media queries */
-
-
-@media screen and (min-width:0px) and (max-width:375px) {
-
-    .customer-section-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-        margin: auto;
-
-    }
-
-    .last-color-section {
-        display: flex;
-
-
-    }
-
-    .last-color-section h4 {
-
-        margin: 5px;
-
-    }
-
-
-
-}
-
-@media screen and (min-width:375px) and (max-width:765px) {
-
-    .customer-section-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-        margin: auto;
-
-    }
-
-
-
-}
-h1{
-    margin-bottom: 2%;
-}
-p{
-    line-height: 20px;
-    font-size: 16px;
-    font-family: "montserrat", sans-serif;
-}
-h4{
-    line-height: 20px;
-}
-#customer-section hr{
-    /* border: 1px solid red;
-    background-color: blue; */
-    margin: 4% 0;
-}
-.last-color-section>h4{
-    line-height:20Px ;
-    /* border:2px solid rgb(74,172,143); */
-    padding:5px 0;
-    
-}
-.last-color-section>h4>a{
-    color:rgb(74,172,143);
-    font-weight: bold;
-
-}
-#footer-last-section-para p{
-    /* border:2px solid white; */
-    line-height: 25px;
-    font-size: 18px;
-    margin:2% 0;
-
-
+a{
+    text-decoration: none;
+    color: whitesmoke;
 }
