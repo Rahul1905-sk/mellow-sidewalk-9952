@@ -8,14 +8,14 @@ import {slider1,box_2m,men_ka_best,men_ka_tshirt,mstart2,box3_m} from "./home/ho
 import {slider2,box_2w,women_ka_best,women_ka_tshirt,wstart2,box3_w} from "./home/homeWomen.js"
 import {slider3 ,box_2acc,a_ka_best,a_ka_data,astart2,box3_acc} from "./home/homeACCESSORIES.js"
 
-let footerdiv = document.querySelector("#footer");
+let footerdiv = document.querySelector("#part1");
 footerdiv.innerHTML = footerSection ()
 
 let navbardiv = document.querySelector("#navbar");
 navbardiv.innerHTML = navbar();
 
-let footerdiv = document.getElementById("footer");
-footerdiv.innerHTML = footerSection ();
+// let footerdiv = document.getElementById("footer");
+// footerdiv.innerHTML = footerSection ();
 
 
 
