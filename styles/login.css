@@ -1,0 +1,170 @@
+body{
+    margin:0px;
+}
+#container{
+    width:100%;
+    font:caption;
+    display:flex;
+    
+}
+
+#heading_div{
+    width:60%; 
+    padding-bottom: 60px;
+    background-color: #fffae8;
+}
+#heading_div>img{
+    padding-top: 40px;
+    padding-left: 15px;
+
+}
+#heading{
+    margin-left: 30px;
+    width:80%;
+    
+}
+#login_div{
+    text-align: center;
+    font-size: medium;
+}
+#para{
+    color:grey;
+    font-size: 20px;
+}
+#input_div{  
+    width:60%;
+    height:60px;
+    margin: auto;
+    margin-top: 12%;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+
+}
+
+#choose{
+    height:60%;
+    width:20%;
+    background-color: #f5f5f5;
+    border:none;
+    outline: none;
+    
+}
+#choose:focus{
+    border:none;
+}
+#choose::after{
+    font-size: x-large;
+    color:grey;
+}
+
+#mobile{
+    align-items: center;
+    height:95%;
+    width: 70%;
+    border:none;
+    font-size: large;
+    font-weight: bold;
+    outline: none;
+    /* transition: all 0.1s; */
+}
+
+#mobile:focus{
+    border:none;
+}
+#mobile{
+    align-items: center;
+}
+#mobile::placeholder{
+    font-size: 18px;
+    font-weight:bold;
+    margin-left: -100px;
+    text-align: left;
+   
+}
+#valid_num{
+    color:red;
+    font-size: small;
+    margin-left: -10px;
+}
+#login{
+    width:60%;
+    height:60px;
+    margin-top: 20px;
+    border: 1px solid #42a2a2;
+    background-color: #42a2a2;
+    color: White;
+    font-size: x-large;
+    border-radius: 5px;
+
+}
+#or{
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+}
+#email{
+    display: flex;
+    width:53%;
+    margin: auto;
+    height:40px;
+    border: 1px solid #aaaaaa;
+    font-size: large;
+    font-weight: bold;
+    color:#5c5c5c;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+#email>img{
+    width:25px;
+    height: 22px;
+    margin-right: 12px;   
+}
+#buttons{ 
+    margin: auto;
+    width:53%;
+   display: flex;
+   margin-top: 15px;
+   
+}
+#buttons img{
+    width:24px;
+    height: 24px;
+    margin-right: 10px;
+}
+#google{
+    display: flex;
+    height:40px;
+    width: 48%;
+    justify-content: center;
+    border: 1px solid #aaaaaa;
+    color:#5c5c5c;
+    font-size: large;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 5px;
+
+}
+#facebook{
+    display: flex;
+    height:40px;
+    width: 49%;
+    justify-content: center;
+    border: 1px solid #aaaaaa;
+    color:#5c5c5c;
+    font-size: large;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 3%;
+    border-radius: 5px;
+
+}
+#policy{
+    margin: auto;
+    width:64%;
+    margin-top: 10%;
+}
+#policy span{
+    color:teal;
+    font-weight: bold;
+}
