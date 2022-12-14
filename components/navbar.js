@@ -184,7 +184,7 @@ function navbar()
     <div id="nav_search_bar">
          <li><input type="text" id="search_product_by_name" placeholder="search by product,category or collection">
          <div id = "nav_search_bar_fetchData"></div></li>
-        <li><a href="">Login</a></li>
+        <li><a href="./login.html">Login</a></li>
         <li><a href=""><span><i class="far fa-heart"></i></span></a></li>
 
         <svg id="cart_logo" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1.25em" width="1.25em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zm80 0v-32a96 96 0 0196-96h0a96 96 0 0196 96v32"></path></svg>
