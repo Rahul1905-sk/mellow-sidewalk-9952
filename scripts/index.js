@@ -1,15 +1,11 @@
 
 
-import {Footer} from "../components/footer.js"
+import {footerSection} from "../components/footer.js"
 import {navbar} from "../components/navbar.js"
 
-import {homeprofiles} from "./homeprofiles.js"
 
-let navbardiv = document.getElementById("navbar");
+let footerdiv = document.querySelector("#footer");
+footerdiv.innerHTML = footerSection ()
+
+let navbardiv = document.querySelector("#navbar");
 navbardiv.innerHTML = navbar();
-
-let footerdiv = document.getElementById("footer");
-footerdiv.innerHTML = Footer ();
-
-// Display products on index/homepage
-homeprofiles();
