@@ -100,14 +100,14 @@ border: none;
 background-color: transparent;
 border: .5px solid #333;
 }
-
-#nav_bar_manu
+/* 
+#nav_bar_menu
 {
     width: 100%;
     display: flex;
     justify-content: center;
    
-}#nav_bar_manu>li
+}#nav_bar_menu>li
 {
     list-style: none;
     font-size: 18px;
@@ -116,21 +116,21 @@ border: .5px solid #333;
 {
     font-size: 18px;
 }
-#nav_bar_manu>li>a{
+#nav_bar_menu>li>a{
     text-decoration: none;
     color: #333;
     padding: 2px;
-}#nav_bar_manu>li>a:hover
+}#nav_bar_menu>li>a:hover
 {
     font-weight: 600;
     color: black;
 }hr{
      border: .2px solid rgb(231, 208, 208);;
-}#nav_bar_manu>li:hover
+}#nav_bar_menu>li:hover
 {
 border-bottom: 4px solid rgb(253, 216, 53);
 
-}
+} */
 
 #logo_menu>li>a:hover
 {
