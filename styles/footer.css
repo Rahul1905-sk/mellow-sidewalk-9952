@@ -13,21 +13,9 @@
 }
 
 
-#footer-part {
-    line-height: 20px;
-    padding: 5% 0;
-    width: 100%;
-    height: auto;
-    background-color: black;
-    color: white;
-    font-family: "montserrat", sans-serif;
-}
-
 #customer-section {
     width: 75%;
     margin: auto;
-
-
 }
 
 .customer-section-grid a{
@@ -77,8 +65,9 @@
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px;
-    font-family:  sans-serif;
+    /* line-height: 18px; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-family:  sans-serif; */
 }
 
 .last-color-section h4 {
