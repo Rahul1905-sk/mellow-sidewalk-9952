@@ -5,26 +5,6 @@ padding: 0px;
 }
 
 
-
-/* .icon_bag {
-    font-family: icomoon!important;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-} */
-
-/* .icon_bag:before {
-    content: "\E931";
-} */
-
-#cart_logo{
-    margin-right: 10px;
-}
-
 #navbar
 {
     position: sticky;
