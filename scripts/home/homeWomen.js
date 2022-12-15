@@ -84,68 +84,40 @@ const slider2=()=>{
         })
      
     }
-    // womens slider 2 
-
-function wstart2() {
-let img_arr = [
- 
-];
-
-let ss2 = document.getElementById("ss2w");
-
-let i = 0;
-
-x2 = setInterval(function () {
-  if (i === img_arr.length - 2) {
-    i = 0;
-  }
-  ss2.innerHTML = "";
-
-  let img1 = document.createElement("img");
-  img1.src = `${img_arr[i]}`;
-
-  let img2 = document.createElement("img");
-  img2.src = `${img_arr[i + 1]}`;
-
-  let img3 = document.createElement("img");
-  img3.src = `${img_arr[i + 2]}`;
-  ss2.append(img1, img2, img3);
-  i++;
-}, 5000);
-}
+   
 
     const box3_w=()=>{
      let PopularM= [
         {
-          "img": "https://images.bewakoof.com/uploads/grid/app/New-thumbnail-DOTD-Men-1664527322.gif",
+          "img": "https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-Women-1670913489.gif",
           "cat": "Design of the Day"
         },
         {
-          "img": "https://images.bewakoof.com/uploads/grid/app/bestseller-1660921671.jpg",
+          "img": "https://images.bewakoof.com/uploads/grid/app/Thumbnail-Bestseller-Women-1668491213.jpg",
           "cat": "Best Sellers"
         },
         {
-          "img": "https://images.bewakoof.com/uploads/grid/app/custom-men--1660921672.jpg",
+          "img": "https://images.bewakoof.com/uploads/grid/app/hotdeals-2-1668491210.jpg",
           "cat": "Customization"
         },
         {
-          "img": "https://images.bewakoof.com/uploads/grid/app/new-arrival-1660921673.jpg",
+          "img": "https://images.bewakoof.com/uploads/grid/app/Thumbnail-Customise-Women-1668491215.jpg",
           "cat": "New Arrivals"
         },
         {
-          "img": "https://images.bewakoof.com/uploads/grid/app/last-sizes-1660921673.jpg",
+          "img": "https://images.bewakoof.com/uploads/grid/app/Thumbnail-New-Arrivals-Women-1668491217.jpg",
           "cat": "Last Sizes Left"
         },
         {
-          "img": "https://images.bewakoof.com/uploads/grid/app/plus-size-1660921675.jpg",
+          "img": "https://images.bewakoof.com/uploads/grid/app/last-size-new-thumbnaik-1668491212.jpg",
           "cat": "Plus Size"
         },
         {
-          "img": "https://images.bewakoof.com/uploads/grid/app/offiicale-merch-1660921674.jpg",
+          "img": "https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-women-plus-1668491893.jpg",
           "cat": "Official Collaboration"
         },
         {
-          "img": "https://images.bewakoof.com/uploads/grid/app/PC-1660921675.jpg",
+          "img": "https://images.bewakoof.com/uploads/grid/app/vote-thumbnail-1668491219.jpg",
           "cat": "Personal Care"
         }
       ]
@@ -261,4 +233,4 @@ x2 = setInterval(function () {
   
   
   
-    export {slider2,box_2w,women_ka_best,women_ka_tshirt,wstart2,box3_w};
+    export {slider2,box_2w,women_ka_best,women_ka_tshirt,box3_w};
