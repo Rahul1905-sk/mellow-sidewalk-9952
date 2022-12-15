@@ -14,10 +14,6 @@ footerdiv.innerHTML = footerSection ()
 let navbardiv = document.querySelector("#navbar");
 navbardiv.innerHTML = navbar();
 
-// let footerdiv = document.getElementById("footer");
-// footerdiv.innerHTML = footerSection ();
-
-
 
 const tshirt = [
     {

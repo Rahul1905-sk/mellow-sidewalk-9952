@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/paymentPage.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="header">
+        <img src="./images/logo3.png" alt="">
+        <span>Signed as:</span>
+    </div>
+    <hr>
+
+    <div id="payment-price">
+        <h3>Choose your payment method</h3>
+      </div>
+      <div id = "payment-mode">
+          <div id = "left-payment-mode">
+            <div>
+                <img src="./images/debit-credit.svg" alt="">
+                <button id = "payment-debit-button">DEBIT/CREDIT CARD</button>
+            </div>
+            <div>
+                <img src="./images/wallet.webp" alt="">
+                <button id ="payment-wallet-button">WALLET</button>
+
+            </div>
+            <div>
+                <img src="./images/upi.webp" alt="">
+                <button id = "payment-upi-button">UPI</button>
+
+            </div>
+            <div>
+                <img src="./images/netbanking.webp" alt="">
+                <button id = "payment-net-banking-button">NET BANKING</button>
+
+
+            </div>
+            <div>
+                <img src="./images/cod.webp" alt="">
+                <button id = "payment-cod-button"> <p>Cash On Delivery</p> 
+                </button>
+
+            </div>
+          </div>
+          <div id = "right-payment-mode">
+              <div id = "payment-debit">
+                  <div>
+                     <img src="./images/ic-visa-gray-payment-v1.webp" alt="">
+                     <img src="./images/ic-master-card-payment-v1.webp" alt="">
+                     <img src="./images/ic-rupay-payment-v1.webp" alt="">
+                     <img src="./images/ic-american-express-payment-v1.webp" alt="">
+                    </div>
+                    <input type="text" id="card-number" placeholder="Card Number" />
+                    <input type="text" id="card-name" placeholder="Name on Card" />
+                    <input type="text" id="card-expiry" placeholder="Expiry (MM/YY)" />
+                    <input type="password" id="card-password" placeholder="CVV" />
+                    <div id = "card-payment-div2">
+                        <input type="checkbox" id = "card-checkbox"/>
+                        <label id = "card-payment-para1">Securely save this card for faster payments.</label>
+                    </div>
+                    <p>
+                      This transaction you make is totally secure. We don't save your
+                      CVV number.
+                    </p>
+                    <button id="card-pay-now-button">PAY NOW</button>
+                  </div>
+              <div id = "payment-wallet">
+                  <div>
+                          <img src="https://images.bewakoof.com/web/paytm-1556185965.png" alt="">
+                          <p>Paytm Wallet</p>
+                          <input type="radio">
+                  </div>
+                  <div>
+                          <img src="https://images.bewakoof.com/web/phonepe-1556185963.png" alt="">
+                          <p>PhonePe</p>     
+                          <input type="radio">             
+                  </div>
+                  <div>             
+                          <img src="./images/ic-mobikwik-3x-payment-v1.webp" alt="">            
+                          <p>Mobikwik</p>          
+                          <input type="radio">                 
+                  </div>
+                  <div>                
+                          <img src="https://images.bewakoof.com/web/bitmap-copy.jpg" alt="">             
+                          <p>Freecharge</p>                  
+                          <input type="radio">                   
+                  </div>
+              </div>
+              <div id="payment-upi">
+                      <div>
+                          <img src="https://images.bewakoof.com/web/upi-logo.png" alt="">
+                          <p>Add UPI</p>
+                          <input type="radio">
+                       </div>
+                      <input type="text" placeholder="Enter UPI ID">
+                      <p>UPI ID is in the format of mobilenumber@bank or username@bank</p>
+                      <div>
+                          
+                          <!-- <input type="checkbox" name="" id=""> -->
+                              <p>	Save this UPI ID for future payments.</p>
+                          
+                          
+                      </div>
+                       <button>VERIFY</button>
+              </div>
+              <div id="payment-net-banking">
+                  <div>
+                      <img src="https://images.bewakoof.com/web/icici-1556185960.png" alt="">
+                      <p>ICICI</p>
+                      <input type="radio">
+              </div>
+              <div>
+                      <img src="https://images.bewakoof.com/web/axis-1556185962.png" alt="">
+                      <p>Axis</p>     
+                      <input type="radio">             
+              </div>
+              <div>
+                      <img src="https://images.bewakoof.com/web/sbi-1556185961.png" alt="">          
+                      <p>SBI</p>                   
+                      <input type="radio">               
+              </div>
+              <div>             
+                      <img src="https://images.bewakoof.com/web/hdfc-1556185961.png" alt="">            
+                      <p>HDFC</p>          
+                      <input type="radio">                 
+              </div>
+              <div>                
+                      <img src="https://images.bewakoof.com/web/kotak-1556185967.png" alt="">             
+                      <p>Kotak</p>                  
+                      <input type="radio">                   
+              </div>
+              <div>                
+                  <img src="https://images.bewakoof.com/web/other-bank-icon-1600258256.png" alt="">             
+                  <p>Others</p>                  
+                  <button id = "payment-net-other-arrow">∟</button>                 
+          </div>
+          <p>You will be redirected to the banks website to complete the payment process.</p>
+              </div>
+              <div id="payment-cod">
+                <div>
+                <p>Cash Collection Charges: Costs ₹ 20 Extra</p>                 <button>VERIFY</button>
+        </div>
+          </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+</body>
+<script src="./scripts/paymentPage.js"></script>
+</html>
+
