@@ -15,16 +15,16 @@ import {slider3 ,box_2acc,a_ka_best,a_ka_data,box3_acc} from "./home/homeACCESSO
 let footerdiv = document.querySelector("#part1");
 footerdiv.innerHTML = footerSection ()
 
-<<<<<<< HEAD
+
 let carosse1 = document.getElementById("caross1");
 carosse1.innerHTML = carousel_aala1();
 
 let carosse2 = document.getElementById("caross2");
 carosse2.innerHTML = carousel_aala2();
-=======
+
 let navbardiv = document.querySelector("#navbar");
 navbardiv.innerHTML = navbar();
->>>>>>> a0c1122462d77285f683d959812468c158f76dda
+
 
  let carosse3 = document.getElementById("caross3");
 carosse3.innerHTML = carousel_aala3();
