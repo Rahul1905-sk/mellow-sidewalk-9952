@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mens Product</title>
+    <link rel="stylesheet" href="./styles/products.css" />
+    <style></style>
+  </head>
+  <body>
+      
+  <div id="displayData"></div>
+    <div id="home_bar">
+      <a href="../index.html" id="homebar_2"><div>Home</div></a>
+      <div id="slash"> / </div>
+      <div> Men Clothing</div>
+    </div>
+    <!-- for sort  -->
+    <div id="category_name">
+      <h1>Men Clothing (20)</h1>
+    </div>
+    <div id="ra-one">
+      <div id="filter">
+        <h3 id="filter1">FILTERS</h3>
+      </div>
+      <div id="sortPrice1">
+        <select id="sortPrice" onchange="handlePriceSort()">
+          <option>SORT BY Popular</option>
+          <option value="popular">Popular</option>
+          <option value="HTL">Price: High To Low</option>
+          <option value="LTH">Price: Low To High</option>
+        </select>
+      </div>
+    </div>
+    <div id="bag">
+    <div id = "ra">
+      <select id="filterVenue"  >
+        <option >Category</option>
+        <option value="t-shirts">T-Shirt</option>
+        <option value="boxer">Boxer</option>
+        <option value="shirts">Shirts</option>
+        <option value="Shorts">Shorts</option>
+        <option value="Kurta">Kurta</option>
+        <option value="Joggers">Joggers</option>
+        <option value="Track_Pant">Track Pant</option>
+        <option value="Jeans">Jeans</option>
+        <option value="Vest">Vest</option>
+       
+      </select>
+      <select id="Venue" >
+        <option value="none">Sizes</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="2XL">2XL</option>
+        <option value="3XL">3XL</option>
+        <option value="4XL">4XL</option>
+        <option value="5XL">5XL</option>
+        <option value="6XL">6XL</option>
+        <option value="28">28</option>
+        <option value="30">30</option>
+        <option value="32">32</option>
+      </select>
+      <select id="Va" >
+        <option value="none">Brand</option>
+        <option value="Bewakoof">Bewakoof</option>
+        <option value="Snith">Snith</option>
+        <option value="Hangup">Hangup</option>
+        <option value="Campus_Sutra">Campus Sutra</option>
+        <option value="Dillinger">Dillinger</option>
+        <option value="Difference_Of_Opinion">Difference Of Opinion</option>
+        <option value="Alcis">Alcis</option>
+        <option value="Breakbounce">Breakbounce</option>
+        <option value="Alstyle">Alstyle</option>
+      </select>
+      <select id="Vb" >
+        <option value="none">Color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+        <option value="brown">Brown</option>
+        <option value="yellow">Yellow</option>
+      </select>
+      <select id="Vc" >
+        <option value="none">Design</option>
+        <option value="Solid">Solid</option>
+        <option value="Printed">Printed</option>
+        <option value="Graphic_Print">Graphic Print</option>
+        <option value="Plain">Plain</option>
+        <option value="Typography">Typography</option>
+      </select>
+      <select id="Vd" >
+        <option value="none">Fit</option>
+        <option value="Regular_Fit">Regular Fit</option>
+        <option value="Slim_Fit">Slim Fit</option>
+        <option value="Oversized">Oversized</option>
+        <option value="Relaxed_Fit">Relaxed Fit</option>
+        <option value="Skinny_Fit">Skinny Fit</option>
+        <option value="Slim">Slim</option>
+        <option value="Loose_Fit">Loose Fit</option>
+       </select> 
+       <select id="Vf" >
+        <option value="none">Sleeve</option>
+        <option value="Half_Sleeve">Half Sleeve</option>
+        <option value="Full_Sleeve">Full Sleeve</option>
+        <option value="Sleeveless">Sleeveless</option>
+        <option value="Short_Sleeve">Short Sleeve</option>
+       </select> 
+       <select id="Vg" >
+        <option value="none">Neck</option>
+        <option value="Round_Neck">Round Neck</option>
+        <option value="Mandarin_Collar">Mandarin Collar</option>
+        <option value="Hood">Hood</option>
+        <option value="Spread_Collar">Spread Collar</option>
+       </select> 
+       <select id="Vh" >
+        <option value="none">Ratings</option>
+        <option value="4.5_and_above">4.5 and above</option>
+        <option value="4._and_above">4 and above</option>
+        <option value="3.5_and_above">3.5 and above</option>
+        <option value="3_and_above">3 and above</option>
+        <option value="2.5_and_above">2.5 and above</option>
+        <option value="2_and_above">2 and above</option>
+        <option value="1.5_and-above">1.5 and above</option>
+       </select> 
+       <select id="Vi" >
+        <option value="none">Discount</option>
+        <option value="10%_Or_More">10% Or More</option>
+        <option value="20%_Or_More">20% Or More</option>
+        <option value="30%_Or_More">30% Or More</option>
+        <option value="40%_Or_More">40% Or More</option>
+        <option value="50%_Or_More">50% Or More</option>
+        <option value="60%_Or-More">60% Or More</option>
+        <option value="70%_Or_More">70% Or More</option>
+       </select>
+    </div>
+    <div id="container"></div>
+  </div>
+    <!--    
+          Footer will be added
+     -->
+  </body> 
+</html> 
