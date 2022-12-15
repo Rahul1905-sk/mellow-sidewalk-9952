@@ -11,14 +11,14 @@ login_btn.onclick=()=>{
 }
 
 let check=document.getElementById("mobile");
-check.oninput=()=>{
-    
+check.oninput=()=>{ 
     count();
 }
 
 const  Login=()=>{
     if(mobile.length==10){
-        alert("ok");
+        localStorage.setItem("phone",mobile);
+        window.location.href="signup.html";
     }else{
         document.getElementById("valid_num").innerText="Please Enter a Vlid Mobile Number";
         document.getElementById("login").style.marginTop="35px";
