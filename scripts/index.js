@@ -3,17 +3,31 @@
 import {footerSection} from "../components/footer.js"
 import {navbar} from "../components/navbar.js"
 
+
 import {homeprofiles} from "./home/homeprofiles.js"
-import {slider1,box_2m,men_ka_best,men_ka_tshirt,mstart2,box3_m} from "./home/homeMens.js"
-import {slider2,box_2w,women_ka_best,women_ka_tshirt,wstart2,box3_w} from "./home/homeWomen.js"
-import {slider3 ,box_2acc,a_ka_best,a_ka_data,astart2,box3_acc} from "./home/homeACCESSORIES.js"
+
+import {carousel_aala1,carousel_aala2,carousel_aala3} from "./home/carousel.js"
+
+import {slider1,box_2m,men_ka_best,men_ka_tshirt,box3_m} from "./home/homeMens.js"
+import {slider2,box_2w,women_ka_best,women_ka_tshirt,box3_w} from "./home/homeWomen.js"
+import {slider3 ,box_2acc,a_ka_best,a_ka_data,box3_acc} from "./home/homeACCESSORIES.js"
 
 let footerdiv = document.querySelector("#part1");
 footerdiv.innerHTML = footerSection ()
 
+<<<<<<< HEAD
+let carosse1 = document.getElementById("caross1");
+carosse1.innerHTML = carousel_aala1();
+
+let carosse2 = document.getElementById("caross2");
+carosse2.innerHTML = carousel_aala2();
+=======
 let navbardiv = document.querySelector("#navbar");
 navbardiv.innerHTML = navbar();
+>>>>>>> a0c1122462d77285f683d959812468c158f76dda
 
+ let carosse3 = document.getElementById("caross3");
+carosse3.innerHTML = carousel_aala3();
 
 const tshirt = [
     {
@@ -190,6 +204,9 @@ const tshirt = [
     },
   ];
 
+ 
+  
+
 
   localStorage.setItem("tshirt", JSON.stringify(tshirt));
   localStorage.setItem("mens_best", JSON.stringify(mens_best));
@@ -202,15 +219,11 @@ const tshirt = [
 // Display products on index/homepage
 homeprofiles();
 
-
-
-
-
 //men
 let mslider=document.getElementById("m_slider");
 mslider.innerHTML=slider1();
-box_2m();
-//mstart2();
+//box_2m();
+
 
 men_ka_tshirt(tshirtarr);
 men_ka_best(mens_bestarr);
@@ -220,8 +233,8 @@ box3_m();
 //women
 let wslider=document.getElementById("w_slider");
 wslider.innerHTML=slider2();
-box_2w();
-//wstart2();
+//box_2w();
+
 
 women_ka_tshirt(tshirtarr);
 
@@ -232,8 +245,66 @@ box3_w();
 let aslider=document.getElementById("a_slider");
 aslider.innerHTML=slider3();
 box_2acc();
-//astart2();
+
 
 a_ka_data(tshirtarr);
 a_ka_best(mens_bestarr);
 box3_acc();
+
+
+
+//new arrivals
+
+var angle = 0;
+let spinnerm = document.getElementById("spinnerm");
+let spinnerw = document.getElementById("spinnerw");
+let spinneracc = document.getElementById("spinneracc");
+
+
+let galleryspin=(sign,nam)=>{ 
+if (!sign) { angle = angle + 80; } else { angle = angle - 80; }
+nam.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
+
+//men
+let sp_leftm=document.getElementById("spin_leftm");
+sp_leftm.addEventListener('click',()=>{
+  console.log("gauri");
+  galleryspin('-',spinnerm);
+});
+let sp_rightm=document.getElementById("spin_rightm");
+sp_rightm.addEventListener('click',()=>{
+  console.log("gauri");
+ galleryspin('',spinnerm);
+});
+
+
+//women
+let sp_leftw=document.getElementById("spin_leftw");
+sp_leftw.addEventListener('click',()=>{
+  console.log("gauri");
+  galleryspin('-',spinnerw);
+});
+
+let sp_rightw=document.getElementById("spin_rightw");
+sp_rightw.addEventListener('click',()=>{
+  console.log("gauri");
+ galleryspin('',spinnerw);
+});
+
+
+//acc
+let sp_leftacc=document.getElementById("spin_leftacc");
+sp_leftacc.addEventListener('click',()=>{
+  console.log("gauri");
+  galleryspin('-',spinneracc);
+});
+ 
+let sp_rightacc=document.getElementById("spin_rightacc");
+sp_rightacc.addEventListener('click',()=>{
+  console.log("gauri");
+ galleryspin('',spinneracc);
+});
+
+//new arrivals
+
