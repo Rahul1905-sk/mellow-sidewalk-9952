@@ -29,50 +29,7 @@
     font-family: sans-serif;
    
   }
-  #container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, 500px);
-    gap: 40px ;
-    width : 70%;
-    margin-right: 50px;
-    margin-top: 100px;
-    /* margin-left: 20px; */
   
-
-  }
-  #container >div{
-    margin-bottom: -60px;
-    
-  }
-  #container >div p{
-      font-size: 15px;
-      color: rgb(95, 95, 97);
-      margin-bottom: 5px;
-  }
-  #container >div h3{
-    margin-bottom: 5px;
-}
-  #container >div>div{
-      display: flex;
-      /* gap: 10px; */
-      align-items: center;
-      
-  }
-  
-  #container >div>div>div>h3{
-    /* margin-right: 10px; */
-    font-size: 22px;
-  }
-  #container >div>div>div:nth-child(2){
-    margin-right: 10px;
-    font-size: 22px;
-  }
-  #container >div>div>div>h4{
-    text-decoration: line-through;
-    color: #949494;
-    
-  }
   #ra-one{
     display: flex;
     justify-content: space-between;
@@ -84,16 +41,11 @@
     font-family: sans-serif;
   }
   #sortPrice1{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   #sortPrice{
     padding: 8px;
     margin-bottom: 20px;
-  }
-  img {
-      height : 70%;
-      width : 100%;
-      text-align: center;
   }
   #ra {
     width : 20%;
@@ -115,7 +67,7 @@
     padding: 10px;
     
   }
-  #Venue{
+  #ra>select{
     
     font-size: 18px;
     width : 70%;
@@ -125,75 +77,47 @@
     padding: 10px;
   
   }
- #Va {
-    font-size: 18px;
-    width : 70%;
-    margin-top: 50px;
-
-    padding: 10px;
-    
+ 
+  .stars::before {
+    content: "\f005";
+    font-family: "fontawesome";
+    color: rgb(255, 167, 2);
   }
- #Vb {
-    font-size: 18px;
-    width : 70%;
-    margin-top: 50px;
-
-    padding: 10px;
-  }
-  #Vc{
-    font-size: 18px;
-    width : 70%;
-    margin-top: 50px;
-
-    padding: 10px;
-  }
-  #Vd {
-    font-size: 18px;
-    width : 70%;
-    margin-top: 50px;
-
-    padding: 10px;
-  }
-  #Vf {
-    font-size: 18px;
-    width : 70%;
-    margin-top: 50px;
-    padding: 10px;
-  }
-  #Vg {
-    font-size: 18px;
-    width : 70%;
-    margin-top: 50px;
-    background-color: whitesmoke;
-    padding: 10px;
-  }
-  #Vh {
-    font-size: 18px;
-    width : 70%;
-    margin-top: 50px;
-    padding: 10px;
-  }
-  #Vi {
-    font-size: 18px;
-    width : 70%;
-    margin-top: 50px;
-    background-color: whitesmoke;
-    padding: 10px;
-  }
-  #container button{
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 2px 2px 3px bisque;
-    font-size: 15px;
-    color: black;
-    font-weight: bold;
-    margin: auto;
-    display: block;
-    margin-top: 10px;
+  
+#container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-#container button:hover{
-    text-shadow: 2px 2px 3px blue;;
-    background:linear-gradient(to left,rgb(225, 192, 192),rgb(146, 238, 241));
+.item-card {
+  width: 300px;
+   margin: 30px; 
+  text-align: center;
+  height:500px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px;
+  margin:20px;
+
+
 }
+.item-card > img {
+  width: 260px;
+  height:400px;
+
+}
+
+.item-card:hover {
+  opacity: 0.7;
+  cursor:pointer;
+  
+}
+.item-card>h4::before{
+  content: "Rs. ";
+}
+
+.item-card > h4 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+
+
