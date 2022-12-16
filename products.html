@@ -27,21 +27,17 @@
       <h1>Men Clothing (20)</h1>
     </div>
     <div id="ra-one">
-      <div id="filter">
-        <h3 id="filter1">FILTERS</h3>
-      </div>
-      <div id="sortPrice1">
-        <select id="sortPrice" onchange="handlePriceSort()">
-          <option>SORT BY Popular</option>
-          <option value="popular">Popular</option>
-          <option value="HTL">Price: High To Low</option>
-          <option value="LTH">Price: Low To High</option>
-        </select>
-      </div>
+      
+      
     </div>
     <div id="bag">
     <div id = "ra">
+      <select id="sortPrice">
+        <option value="desc">Price: High To Low</option>
+        <option value="asc">Price: Low To High</option>
+      </select>
       <select id="filterVenue"  >
+
         <option >Category</option>
         <option value="t-shirts">T-Shirt</option>
         <option value="boxer">Boxer</option>
@@ -115,22 +111,21 @@
         <option value="Sleeveless">Sleeveless</option>
         <option value="Short_Sleeve">Short Sleeve</option>
        </select> 
-       <select id="Vg" >
-        <option value="none">Neck</option>
-        <option value="Round_Neck">Round Neck</option>
-        <option value="Mandarin_Collar">Mandarin Collar</option>
-        <option value="Hood">Hood</option>
-        <option value="Spread_Collar">Spread Collar</option>
-       </select> 
+       <select id="filter_Prod">
+        <option value="">Filter By</option>
+        <option value="999">Less Than 999</option>
+        <option value="1499">Less Than 1499</option>
+        <option value="1999">More Than 1999</option>
+      </select>
        <select id="Vh" >
         <option value="none">Ratings</option>
-        <option value="4.5_and_above">4.5 and above</option>
-        <option value="4._and_above">4 and above</option>
-        <option value="3.5_and_above">3.5 and above</option>
-        <option value="3_and_above">3 and above</option>
-        <option value="2.5_and_above">2.5 and above</option>
-        <option value="2_and_above">2 and above</option>
-        <option value="1.5_and-above">1.5 and above</option>
+    
+        <option value="4">4 and above</option>
+    
+        <option value="3">3 and above</option>
+    
+        <option value="2">2 and above</option>
+
        </select> 
        <select id="Vi" >
         <option value="none">Discount</option>
