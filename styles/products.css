@@ -180,20 +180,73 @@
     background-color: whitesmoke;
     padding: 10px;
   }
-  #container button{
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 2px 2px 3px bisque;
-    font-size: 15px;
-    color: black;
-    font-weight: bold;
-    margin: auto;
-    display: block;
-    margin-top: 10px;
+  .stars::before {
+    content: "\f005";
+    font-family: "fontawesome";
+    color: rgb(255, 167, 2);
+  }
+  
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
-#container button:hover{
-    text-shadow: 2px 2px 3px blue;;
-    background:linear-gradient(to left,rgb(225, 192, 192),rgb(146, 238, 241));
+.item-card {
+  width: 100%;
+  
+  /* margin: 10px; */
+  text-align: center;
+  margin:30px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
 }
+.item-card > img {
+  width: 180px;
+  height:300px;
+  margin: auto;
+  /* max-height: 220px; */
+}
+/* .item-card > p {
+  text-align: center;
+  width: 100%;
+  height: 90px;
+} */
+
+.item-card > h3 + p {
+  line-height: 20px;
+  padding: 0px;
+}
+.item-card:hover {
+  opacity: 0.7;
+  cursor:pointer;
+  
+}
+.item-card>h4::before{
+  content: "Rs";
+}
+
+.item-card > h4 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #prod {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #prod > div {
+    display: none;
+  }
+}
+
+
