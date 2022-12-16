@@ -18,7 +18,7 @@ function navbar()
 </div>
 <div id="nav_bar_search">
     <div id="logo_menu">
-      
+   
         <li><a href="./index.html"><img id="be_cool" src="./images/logo3.png" alt="logo"></a></li>
         <li><a href="#">MEN</a>
          <div id="logo_sub_menu1">
@@ -63,8 +63,8 @@ function navbar()
                
                
                 <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/Anime-Bewakoof-Homepage-NavigationCircleIcon-final-1632292125.jpg" alt=""><span>Amine Collection</span></a></li>
-                <li><a href="#"><https://images.bewakoof.com/nav_menu/WinterWear-Bewakoof-Homepage-NavigationCircleIcon-1630653435.png" alt=""><span>Winter Collection</span></a></li>
-                <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/navi-collab-icon-1579514101.gif" alt=""><span>Collebration</span></a></li>
+               
+                <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/navi-collab-icon-1579514101.gif" alt=""><span>Winter Collection</span></a></li>
                 <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/nav-icon-1617643368.png" alt=""><span>Shop Unique Brands</span></a></li>
                 <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/new-arrival-icon-1625237098.png" alt=""><span>Upcomming Collection</span></a></li>
                 <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/bewakoof-men-logo-last-size-1592822253.png" alt=""><span>Last Size Left</span></a></li>
@@ -114,10 +114,11 @@ function navbar()
                    <li><a href="#">Tamil T-Shirt</a></li>
 
                    </ul>
+                   <hr>
                    <ul class="top_category">
                    <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/Anime-Bewakoof-Homepage-NavigationCircleIcon-final-1632292125.jpg" alt=""><span>Amine Collection</span></a></li>
-                   <li><a href="#"><https://images.bewakoof.com/nav_menu/WinterWear-Bewakoof-Homepage-NavigationCircleIcon-1630653435.png" alt=""><span>Winter Collection</span></a></li>
-                   <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/navi-collab-icon-1579514101.gif" alt=""><span>Collebration</span></a></li>
+                   
+                   <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/navi-collab-icon-1579514101.gif" alt=""><span>Winter Collection</span></a></li>
                    <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/nav-icon-1617643368.png" alt=""><span>Shop Unique Brands</span></a></li>
                    <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/new-arrival-icon-1625237098.png" alt=""><span>Upcomming Collection</span></a></li>
                    <li><a href="#"><img src="https://images.bewakoof.com/nav_menu/bewakoof-men-logo-last-size-1592822253.png" alt=""><span>Last Size Left</span></a></li>
@@ -184,7 +185,14 @@ function navbar()
     <div id="nav_search_bar">
          <li><input type="text" id="search_product_by_name" placeholder="search by product,category or collection">
          <div id = "nav_search_bar_fetchData"></div></li>
-        <li><a id="l" href="./login.html">Login</a></li>
+         <div class="dropdown" id="loginBtn">
+        <button class="dropbtn" >Login</button>
+        <div class="dropdown-content" id="dropdown-content">
+          <a href="./login.html">User Login</a>
+          <a href="./admin-side-login/Admin-signin.html">Admin Login</a>
+        </div>
+      </div>
+     
         <li><a href=""><span><i class="far fa-heart"></i></span></a></li>
 
         <svg id="cart_logo" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1.25em" width="1.25em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zm80 0v-32a96 96 0 0196-96h0a96 96 0 0196 96v32"></path></svg>
