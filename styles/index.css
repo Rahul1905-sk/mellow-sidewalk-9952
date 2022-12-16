@@ -211,20 +211,34 @@ width: auto;
 
 
 
-
-
-.box4 div{
-  height:250px;
-  width: auto;
-  display: flex;
+.box4> div{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   justify-content: center;
   align-items: baseline;
-  text-align: center;
-  gap: 15px;
-   margin: 0px 0px 10px 10px;
-   border: 0px solid red;
+  height:300px;
+  width: 80%;
+margin: 30px 0px 30px 10%;
+  border: 0px solid yellow;
+ 
+  
+  }
+  .box4> div>div{
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+    border: 0px solid green;
+    height: 65%;;
+    width: auto;
+   
+  }
+  .box4> div>div img{
+    height:50%;
+    padding-left: 30%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
 
-}
+
 
  /*    ____________________*/
 
@@ -303,7 +317,7 @@ align-items: center;
 
 .box7> div{
 display: grid;
-grid-template-columns: repeat(5, 1fr);
+grid-template-columns: repeat(6, 1fr);
 width: auto;
 gap: 15px;
 padding: 10px;
@@ -311,7 +325,10 @@ border: 0px solid yellow;
 }
 
 .box7>div img{
+  height: 200px;
 width: 80%;
+border: 0.5px dashed gray;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 
@@ -328,18 +345,27 @@ width: 80%;
 }
 .box8>div{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  height: 70%;
+  grid-template-columns: repeat(6, 1fr);
+  height: 300px;
   width: auto;
   gap: 30px;
   margin: 20px;
+
   border: 0px solid green;
  /*position: relative;*/
+ font-size: 11px;
 }
 
+.box8>div div{
+  border: 0.5px dotted gray;
+}
 .box8>div img
 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-top:10px;
+  height: 200px;
   width: 100%;
+ 
 }
 /*    ____________________*/
 
@@ -381,8 +407,6 @@ width: 80%;
 
 
 /*    _________gb new arrival car0usel___________*/
-
-
 #carouselm { 
   width: 95%;
   border: 0px solid red;
@@ -399,12 +423,14 @@ width: 80%;
   height: 300px; 
   transform-origin: 50% 50% -500px; 
   transition: 1s; 
+
 } 
 #spinnerm .caro { 
   width: 40%; max-width: 420px; 
   position: absolute; left: 30%;
   transform-origin: 50% 50% -500px;
   outline:1px solid transparent; 
+  border: 0px solid green;
 }
 #spinnerm .caro:nth-child(1) { transform:rotateY(0deg); 
 }
@@ -446,6 +472,7 @@ width: 80%;
     height: 250px; 
     transform-origin: 50% 50% -500px; 
     transition: 1s; 
+  
   } 
   #spinnerw .caro { 
     height: 300px;
@@ -453,6 +480,7 @@ width: 80%;
     position: absolute; left: 30%;
     transform-origin: 50% 50% -500px;
     outline:1px solid transparent; 
+    border: 0px solid green;
   }
   #spinnerw .caro:nth-child(1) { transform:rotateY(0deg); 
   }
@@ -495,12 +523,14 @@ width: 80%;
       height: 300px; 
       transform-origin: 50% 50% -500px; 
       transition: 1s; 
+     
     } 
     #spinneracc .caro { 
       width: 40%; max-width: 420px; 
       position: absolute; left: 30%;
       transform-origin: 50% 50% -500px;
       outline:1px solid transparent; 
+      border: 0px solid green;
     }
     #spinneracc .caro:nth-child(1) { transform:rotateY(0deg); 
     }

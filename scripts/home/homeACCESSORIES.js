@@ -73,11 +73,10 @@ const slider3=()=>{
           var image = document.createElement("img");
           image.setAttribute("src", elem.img);
   
-          var h3 = document.createElement("h3");
+          var h3 = document.createElement("h5");
           h3.innerText = elem.head;
     
-       
-          div.append(image);
+          div.append(image,h3);
     
           document.getElementById("box2acc").append(div);
       })
@@ -85,35 +84,7 @@ const slider3=()=>{
   }
 
 
-// Access slider 2 
 
-function astart2() {
-let img_arr = [
-  
-];
-
-let ss2 = document.getElementById("ss2a");
-
-let i = 0;
-
-x2 = setInterval(function () {
-  if (i === img_arr.length - 2) {
-    i = 0;
-  }
-  ss2.innerHTML = "";
-
-  let img1 = document.createElement("img");
-  img1.src = `${img_arr[i]}`;
-
-  let img2 = document.createElement("img");
-  img2.src = `${img_arr[i + 1]}`;
-
-  let img3 = document.createElement("img");
-  img3.src = `${img_arr[i + 2]}`;
-  ss2.append(img1, img2, img3);
-  i++;
-}, 5000);
-}
 
 
   
@@ -160,8 +131,11 @@ x2 = setInterval(function () {
   
       var image = document.createElement("img");
       image.setAttribute("src", elem.img);
-  
-      var h3 = document.createElement("h2");
+      image.addEventListener("click", function () {    
+        window.location.href = "products.html";
+      });
+
+      var h3 = document.createElement("h5");
       h3.innerText = elem.cat;
   
    
@@ -180,85 +154,33 @@ x2 = setInterval(function () {
   let a_ka_best=(a_best)=> {
 
     
-      a_best.map(function (elem, index) {
-        // console.log(elem);
-        if (index < 5) {
+      a_best.map(function (elem) {
+        // console.log(gauri);
           var div = document.createElement("div");
     
           var image = document.createElement("img");
-          image.setAttribute("src", elem.imageUrl);
-          image.addEventListener("click", function (elem) {
+          image.setAttribute("src", elem.image);
+          image.addEventListener("click", function () {
             window.location.href = "acc_page.html";
           });
+          var name = document.createElement("h5");
+          name.innerText = elem.title;
+    image.addEventListener("click", function () {    
+        window.location.href = "products.html";
+      });
+          var Price = document.createElement("h5");
+          Price.innerText = `Price:${elem.price.current_price}`;
     
-          var Price = document.createElement("p");
-          Price.innerText = elem.disPrice;
+          div.append(image);
     
-          div.append(image, Price);
-    
-          document.querySelector(".abs_pro1").append(div);
-        } else if (index >= 5 && index <= 10) {
-          var div = document.createElement("div");
-    
-          var image = document.createElement("img");
-          image.setAttribute("src", elem.imageUrl);
-          image.addEventListener("click", function (elem) {
-            window.location.href = "acc_page.html";
-          });
-    
-          var Price = document.createElement("p");
-          Price.innerText = elem.disPrice;
-    
-          div.append(image, Price);
-    
-          document.querySelector(".abs_pro2").append(div);
-        } else {
-          return;
-        }
+          document.querySelector("#abs_pro1").append(div);
+      
       });
     }
   
   
-    let  a_ka_data=(acc_data)=> {
-     
     
-      acc_data.map(function (elem, index) {
-        if (index < 5 && elem.price < 300) {
-          var div = document.createElement("div");
-    
-          var image = document.createElement("img");
-          image.setAttribute("src", elem.imageUrl);
-          image.addEventListener("click", function (elem) {
-            window.location.href = "acc_page.html";
-          });
-    
-          var Price = document.createElement("p");
-          Price.innerText = elem.disPrice;
-    
-          div.append(image, Price);
-    
-          document.querySelector(".a_pro1").append(div);
-        } else if (index >= 5 && index < 10 && elem.price < 300) {
-          var div = document.createElement("div");
-    
-          var image = document.createElement("img");
-          image.setAttribute("src", elem.imageUrl);
-          image.addEventListener("click", function (elem) {
-            window.location.href = "acc_page.html";
-          });
-    
-          var Price = document.createElement("p");
-          Price.innerText = elem.disPrice;
-    
-          div.append(image, Price);
-    
-          document.querySelector(".a_pro2").append(div);
-        } else {
-          return;
-        }
-      });
-    }
   
   
   
-    export {slider3 ,box_2acc,a_ka_best,a_ka_data,astart2,box3_acc};
+    export {slider3 ,box_2acc,a_ka_best,box3_acc};

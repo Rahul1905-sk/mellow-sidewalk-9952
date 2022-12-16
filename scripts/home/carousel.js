@@ -1,7 +1,7 @@
 let carousel_aala1=()=>{
 return`
 
- <base href="https://images.bewakoof.com/uploads/grid/app/New-thumbnail-DOTD-Women-1664353714.gif">
+
         <div id="carouselm">
           <figure id="spinnerm">
             <img class="caro" src="https://images.bewakoof.com/uploads/grid/app/buy2get1-1x1-1-1663944665.gif" >
@@ -25,7 +25,7 @@ return`
 let carousel_aala2=()=>{
   return`
   
-   <base href="https://images.bewakoof.com/uploads/grid/app/1x1-banner-Women-1670913484.gif">
+
    
           <div id="carouselw">
             <figure id="spinnerw">
@@ -52,7 +52,7 @@ let carousel_aala2=()=>{
   let carousel_aala3=()=>{
     return`
     
-     <base href="https://images.bewakoof.com/uploads/grid/app/WinterWear-Landing-desktop-Men-nov-05-1667378451.jpg">
+   
             <div id="carouselacc">
               <figure id="spinneracc">
                 <img class="caro" https://images.bewakoof.com/t640/women-s-black-self-love-graphic-printed-oversized-zipper-hoodie-560616-copy-1670830313-1.jpg" >
@@ -72,5 +72,10 @@ let carousel_aala2=()=>{
     
     `
     }
+
+
+
+ 
+
 
 export{carousel_aala1,carousel_aala2,carousel_aala3};

@@ -39,82 +39,35 @@ const slider1=()=>{
   
   
   
-  const box_2m=()=>{
-    
-    let cat = [
-      {
-        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-accessories-covers-1662043886.jpg",
-        "head": "Mobile Covers"
-      },
-      {
-        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-accessories-slideers-1662043888.jpg",
-        "head": "Sliders"
-      },
-      {
-        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-accessories-bags-1662043885.jpg",
-        "head": "Backpacks"
-      },
-      {
-        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-accessories-flipflops-1662043887.jpg",
-        "head": "Flip Flops"
-      },
-      {
-        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-accessories-books-1662043886.jpg",
-        "head": "Note Books"
-      },
-      {
-        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-accessories-shoes-1662043887.jpg",
-        "head": "Casual Shoes"
-      }
-    ]
   
-   cat.map(function(elem) {
+  // Mens 2 
+  
+  function mstart2(m_arr) {
+  
+    m_arr.map(function (elem) {
+    
+      var div = document.createElement("div");
+
+      var image = document.createElement("img");
+      image.setAttribute("src", elem.image);
+      image.addEventListener("click", function () {    
+        window.location.href = "products.html";
+      });
       
-          var div = document.createElement("div");
-          div.setAttribute("class","mens");
-    
-          var image = document.createElement("img");
-          image.setAttribute("src", elem.img);
-  
-          var h3 = document.createElement("h3");
-          h3.innerText = elem.head;
-    
-       
-          div.append(image,h3);
-    
-          document.getElementById("box2m").append(div);
-      })
-   
-  }
-  
-  // Mens slider 2 
-  
-  function mstart2() {
-    let img_arr = [
-     
-    ];
-  
-    let ss2 = document.getElementById("ss2m");
-  
-    let i = 0;
-  
-    x2 = setInterval(function () {
-      if (i === img_arr.length - 2) {
-        i = 0;
-      }
-      ss2.innerHTML = "";
-  
-      let img1 = document.createElement("img");
-      img1.src = `${img_arr[i]}`;
-  
-      let img2 = document.createElement("img");
-      img2.src = `${img_arr[i + 1]}`;
-  
-      let img3 = document.createElement("img");
-      img3.src = `${img_arr[i + 2]}`;
-      ss2.append(img1, img2, img3);
-      i++;
-    }, 5000);
+      var name = document.createElement("h5");
+      name.innerText = elem.title;
+
+      var Price = document.createElement("h5");
+      Price.innerText = `Price:${elem.price.current_price}`;
+
+      var rate = document.createElement("h5");
+      rate.innerText =`Rating: ${elem.review.rating}`;
+
+      div.append(image,name, Price,rate);
+
+      document.querySelector("#new_m").append(div);
+ 
+  });
   }
   
   
@@ -166,8 +119,10 @@ const slider1=()=>{
   
       var image = document.createElement("img");
       image.setAttribute("src", elem.img);
-  
-      var h3 = document.createElement("h2");
+      image.addEventListener("click", function () {    
+        window.location.href = "products.html";
+      });
+      var h3 = document.createElement("h5");
       h3.innerText = elem.cat;
   
    
@@ -180,31 +135,30 @@ const slider1=()=>{
   }
   
   
-  
   let men_ka_best=(mens_best)=> {
     
       mens_best.map(function (elem) {
         // console.log(elem);
-        
+ 
           var div = document.createElement("div");
     
           var image = document.createElement("img");
-          image.setAttribute("src", elem.imageUrl);
-          image.addEventListener("click", function (elem) {
-            addToCart(elem);
-            //window.location.href = "mens_page.html";
+          image.setAttribute("src", elem.image);
+          image.addEventListener("click", function () {
+            
+            window.location.href = "products.html";
           });
     
-          var name = document.createElement("p");
-          name.innerText = elem.shirtNmae;
+          var name = document.createElement("h5");
+          name.innerText = elem.title;
     
-          var Price = document.createElement("p");
-          Price.innerText = elem.price;
+          var Price = document.createElement("h5");
+          Price.innerText = `Price:${elem.price.current_price}`;
     
-          div.append(image,name,Price);
+          div.append(image,Price);
     
           document.querySelector("#mbs_pro1").append(div);
-        
+      
         
       });
     }
@@ -213,45 +167,36 @@ const slider1=()=>{
     let  men_ka_tshirt=(tshirt)=> {
     
       tshirt.map(function (elem) {
-       
+    
           var div = document.createElement("div");
     
           var image = document.createElement("img");
-          image.setAttribute("src", elem.imageUrl);
-          image.addEventListener("click", function (elem) {
-            addToCart(elem);
-            //window.location.href = "mens_page.html";
+          image.setAttribute("src", elem.image);
+          image.addEventListener("click", function () {
+           
+            window.location.href = "products.html";
           });
-          var name = document.createElement("p");
-          name.innerText = elem.shirtNmae;
+          var name = document.createElement("h4");
+          name.innerText = elem.title;
 
-          var Price = document.createElement("p");
-          Price.innerText = elem.price;
+          var Price = document.createElement("h4");
+          Price.innerText = `Price:${elem.price.current_price}`;
 
-          var Brand = document.createElement("p");
-          Brand.innerText = elem.brand;
+          var rate = document.createElement("h4");
+          rate.innerText =`Rating: ${elem.review.rating}`;
 
-          div.append(image,name, Price,Brand);
+          div.append(image,Price,rate);
     
-          document.querySelector(".Tshirt_pro1").append(div);
-        
+          document.querySelector("#Tshirt_pro1").append(div);
+     
       });
     }
   
   /*
  */
-
-  let addToCart=(e)=> {
-    let product = JSON.parse(localStorage.getItem("cart")) || [];
-
-    product.push(e);
-   localStorage.setItem("cart", JSON.stringify(product.data));
-   //localStorage.setItem("cart", (product));
-  }
- 
- 
+  
 
 /*
 */
   
-    export {slider1,box_2m,men_ka_best,men_ka_tshirt,mstart2,box3_m};
+    export {slider1,men_ka_best,men_ka_tshirt,mstart2,box3_m};
