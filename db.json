@@ -25165,5 +25165,28 @@
         "rating": 3.9
       }
     }
+  ],
+  "User": [
+    {
+      "name": "Nitish Kumar",
+      "mobile": "0987123455",
+      "email": "manishkumar10019464646@gmail.com",
+      "pass": "14581",
+      "id": 1
+    },
+    {
+      "name": "Nitish Kumar",
+      "mobile": "0987123455",
+      "email": "manishkumar10019464646@gmail.com",
+      "pass": "14581",
+      "id": 2
+    },
+    {
+      "name": "nitish",
+      "mobile": "0987123455",
+      "email": "manishkumar10019464646@gmail.com",
+      "pass": "aaaaaa",
+      "id": 3
+    }
   ]
 }
