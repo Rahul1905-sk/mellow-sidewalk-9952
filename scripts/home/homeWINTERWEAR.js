@@ -7,7 +7,8 @@ let  winter_ka_data=(w_data)=> {
         var image = document.createElement("img");
         image.setAttribute("src", elem.image);
         image.addEventListener("click", function () {    
-          window.location.href = "products.html";
+          localStorage.setItem("wind", JSON.stringify(elem));
+          window.location.href = "detail.html";
         });
         
         var name = document.createElement("h4");

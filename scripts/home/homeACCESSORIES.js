@@ -166,7 +166,8 @@ const slider3=()=>{
           var name = document.createElement("h5");
           name.innerText = elem.title;
     image.addEventListener("click", function () {    
-        window.location.href = "products.html";
+      localStorage.setItem("wind", JSON.stringify(elem));
+      window.location.href = "detail.html";
       });
           var Price = document.createElement("h5");
           Price.innerText = `Price:${elem.price.current_price}`;
