@@ -14,6 +14,11 @@ let check=document.getElementById("mobile");
 check.oninput=()=>{ 
     count();
 }
+document.getElementById("email").onclick=()=>{
+    //Emaillogin();
+    window.location.href=("email.html");
+   
+}
 
 const  Login=()=>{
     if(mobile.length==10){
@@ -33,3 +38,7 @@ const count=()=>{
     document.getElementById("login").style.marginTop="20px";
     document.getElementById("input_div").style.border="1px solid  #aaaaaa";
 }
+
+// const Emaillogin=()=>{
+//     window.location.href=("email.html");
+// }

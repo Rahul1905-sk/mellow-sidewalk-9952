@@ -115,6 +115,9 @@ body{
     justify-content: center;
     border-radius: 5px;
 }
+#email:hover{
+    cursor: pointer;
+}
 #email>img{
     width:25px;
     height: 22px;

@@ -45,31 +45,51 @@ const getData=async()=>{
     email:document.getElementById("email").value,
     pass:document.getElementById("pass").value,
     }
-    if(obj.pass.length>=6){
-        let res=await fetch(`http://localhost:3000/User`,{
-            method:"POST",
-            body:JSON.stringify(obj),
+    let get=await fetch(`http://localhost:3000/User`,{
+            method:"GET",
             headers:{
                 "Content-Type":"application/json",
             }
-        })
-        window.location.href="index.html";
-    }else if(obj.mobile.length!==10 ){
-        document.getElementById("valid_num").innerText="Please Enter a Valid Mobile Number";
-        document.getElementById("login").style.marginTop="9%";
-        document.querySelector("#input_div").style.border="2px solid red";
-        document.getElementById("mobile").style.borderBottom="2px solid red";
-    }
-    else{
-        document.getElementById("wrong_pass").innerText="Enter at least 6 characters";
-        document.getElementById("whatsapp").style.marginTop="35px";
-        document.getElementById("pass").style.borderBottom="2px solid red";
-        
-    }
-    console.log("obj",obj);
+    })
+    get=await get.json()
+    console.log(get);
+    let flag=true;
     
-    res=await res.json();
-    console.log(res);
+    get.forEach((el)=>{
+        if(obj.email==el.email){
+            flag=false
+            alert("User already exists");
+            
+        }
+        console.log(el.email)
+    })
+    if(flag==true){
+        if( obj.pass.length>=6){
+            let res=await fetch(`http://localhost:3000/User`,{
+                method:"POST",
+                body:JSON.stringify(obj),
+                headers:{
+                    "Content-Type":"application/json",
+                }
+            })
+            localStorage.setItem("username",obj.name);
+            window.location.href="index.html";
+            
+        }else if(obj.mobile.length!==10 ){
+            document.getElementById("valid_num").innerText="Please Enter a Valid Mobile Number";
+            document.getElementById("login").style.marginTop="9%";
+            document.querySelector("#input_div").style.border="2px solid red";
+            document.getElementById("mobile").style.borderBottom="2px solid red";
+        }
+        else{
+            document.getElementById("wrong_pass").innerText="Enter at least 6 characters";
+            document.getElementById("whatsapp").style.marginTop="35px";
+            document.getElementById("pass").style.borderBottom="2px solid red";
+            
+        }
+
+    }
+        
 
 }
 
