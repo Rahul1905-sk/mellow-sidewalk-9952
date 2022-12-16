@@ -50,8 +50,12 @@ const slider1=()=>{
 
       var image = document.createElement("img");
       image.setAttribute("src", elem.image);
-      image.addEventListener("click", function () {    
-        window.location.href = "products.html";
+      image.addEventListener("click", function () {  
+          
+        localStorage.setItem("wind", JSON.stringify(el));
+        window.location.href = "detail.html";
+    
+       // window.location.href = "products.html";
       });
       
       var name = document.createElement("h5");
