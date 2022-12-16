@@ -100,3 +100,7 @@ const handle_filter = async (query, value) => {
   let data = await res.json();
   appendData(data);
 };
+function getdetails(el) {
+    localStorage.setItem("wind", JSON.stringify(el));
+    window.location.href = "detail.html";
+  }
