@@ -5,8 +5,7 @@ const slider1=()=>{
   <div class="slider">
          <div class="slide-track">
          <div class="slide">
-  
-  
+
            <img src="https://images.bewakoof.com/uploads/grid/app/b2g1-1x1-common-1670505865.jpg" alt="">
          </div>
          <div class="slide">
@@ -125,36 +124,36 @@ const slider1=()=>{
   let box3_m=()=>{
     let PopularM= [
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/New-thumbnail-DOTD-Men-1664527322.gif",
-        "cat": "Design of the Day"
+        "img": "https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-copy-1669723278.jpg",
+        "cat": "Pluse size"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/bestseller-1660921671.jpg",
+        "img": "https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-bestseller-1669138226.jpg",
         "cat": "Best Sellers"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/custom-men--1660921672.jpg",
+        "img": "https://images.bewakoof.com/uploads/grid/app/me-shirt-thumbnail-1668508337.jpg",
         "cat": "Customization"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/new-arrival-1660921673.jpg",
+        "img": "https://images.bewakoof.com/uploads/grid/app/Thumbnail-New-Arrivals-Common-1668508339.jpg",
         "cat": "New Arrivals"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/last-sizes-1660921673.jpg",
+        "img": "https://images.bewakoof.com/uploads/grid/app/last-size-new-thumbnaik-1668508337.jpg",
         "cat": "Last Sizes Left"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/plus-size-1660921675.jpg",
-        "cat": "Plus Size"
+        "img": "https://images.bewakoof.com/uploads/grid/app/hotdeals-2-1668491210.jpg",
+        "cat": "Hot Deals"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/offiicale-merch-1660921674.jpg",
+        "img": "https://images.bewakoof.com/uploads/grid/app/Thumbnail-Collabs-Common-1668508338.jpg",
         "cat": "Official Collaboration"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/PC-1660921675.jpg",
-        "cat": "Personal Care"
+        "img": "https://images.bewakoof.com/uploads/grid/app/image-1668598708.png",
+        "cat": "Coupon Offers"
       }
     ];
     
@@ -182,95 +181,77 @@ const slider1=()=>{
   
   
   
-  
-  
-  
-  
-  
-  
-  
   let men_ka_best=(mens_best)=> {
-      //document.querySelector(".mbs_pro1").innerHTML = "";
-      //document.querySelector(".mbs_pro2").innerHTML = "";
     
-      mens_best.map(function (elem, index) {
+      mens_best.map(function (elem) {
         // console.log(elem);
-        if (index < 5) {
+        
           var div = document.createElement("div");
     
           var image = document.createElement("img");
           image.setAttribute("src", elem.imageUrl);
           image.addEventListener("click", function (elem) {
-            window.location.href = "mens_page.html";
+            addToCart(elem);
+            //window.location.href = "mens_page.html";
           });
     
-          var Price = document.createElement("p");
-          Price.innerText = elem.disPrice;
-    
-          div.append(image, Price);
-    
-          document.querySelector(".mbs_pro1").append(div);
-        } else if (index >= 5 && index <= 10) {
-          var div = document.createElement("div");
-    
-          var image = document.createElement("img");
-          image.setAttribute("src", elem.imageUrl);
-          image.addEventListener("click", function () {
-            window.location.href = "mens_page.html";
-          });
+          var name = document.createElement("p");
+          name.innerText = elem.shirtNmae;
     
           var Price = document.createElement("p");
-          Price.innerText = elem.disPrice;
+          Price.innerText = elem.price;
     
-          div.append(image, Price);
+          div.append(image,name,Price);
     
-          document.querySelector(".mbs_pro2").append(div);
-        } else {
-          return;
-        }
+          document.querySelector("#mbs_pro1").append(div);
+        
+        
       });
     }
   
   
     let  men_ka_tshirt=(tshirt)=> {
     
-      tshirt.map(function (elem, index) {
-        if (index < 5 && elem.price < 300) {
+      tshirt.map(function (elem) {
+       
           var div = document.createElement("div");
     
           var image = document.createElement("img");
           image.setAttribute("src", elem.imageUrl);
-          image.addEventListener("click", function () {
-            window.location.href = "mens_page.html";
+          image.addEventListener("click", function (elem) {
+            addToCart(elem);
+            //window.location.href = "mens_page.html";
           });
-    
+          var name = document.createElement("p");
+          name.innerText = elem.shirtNmae;
+
           var Price = document.createElement("p");
-          Price.innerText = elem.disPrice;
-    
-          div.append(image, Price);
+          Price.innerText = elem.price;
+
+          var Brand = document.createElement("p");
+          Brand.innerText = elem.brand;
+
+          div.append(image,name, Price,Brand);
     
           document.querySelector(".Tshirt_pro1").append(div);
-        } else if (index >= 5 && index < 10 && elem.price < 300) {
-          var div = document.createElement("div");
-    
-          var image = document.createElement("img");
-          image.setAttribute("src", elem.imageUrl);
-          image.addEventListener("click", function () {
-            window.location.href = "mens_page.html";
-          });
-    
-          var Price = document.createElement("p");
-          Price.innerText = elem.disPrice;
-    
-          div.append(image, Price);
-    
-          document.querySelector(".Tshirt_pro2").append(div);
-        } else {
-          return;
-        }
+        
       });
     }
   
-  
+  /*
+ */
+
+  let addToCart=(e)=> {
+    let product = JSON.parse(localStorage.getItem("cart")) || [];
+
+    product.push(e);
+   localStorage.setItem("cart", JSON.stringify(product.data));
+   //localStorage.setItem("cart", (product));
+  }
+ 
+ 
+
+/*
+*/
   
     export {slider1,box_2m,men_ka_best,men_ka_tshirt,mstart2,box3_m};

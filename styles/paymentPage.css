@@ -1,5 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body{
-    font-family: "montserrat", sans-serif;
+    /* font-family: "montserrat", sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 } 
 
 
@@ -41,16 +45,34 @@ body{
     display: flex;
     width: 50%;
     margin-left: 8%; 
-    border-radius: 2px;
-    height: 500px;
+    /* border-radius: 2px; */
+    height: 450px;
 }
 #left-payment-mode{
-    width: 50%;
+    width: 40%;
+    /* border-right: 2px solid #eee; */
     background-color: whitesmoke;
 }
 
+#cardLogos {
+   /* border: 1px solid red; */
+    margin: 15px 5px;
+    height: 60px;
+}
+/* #cardLogos img{
+    border: 1px solid green;
+   width: 100%;
+   height: 90px;
+} */
+
+
 #left-payment-mode div{
     display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    /* padding-bottom: 5px; */
+    /* justify-content: center; */
     /* width: 50%;
     background-color: whitesmoke; */
 }
@@ -59,10 +81,9 @@ body{
     display: block;
     width: 100%;
     margin: auto;
-    padding: 20px 15px;
+    padding: 28.5px 15px;
     border: none;
-    border-bottom: 1px solid 
-    #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
     font-weight: bold;
     text-align: left;
 }
@@ -71,12 +92,27 @@ body{
     #42a2a2;
     background-color: white;
 }
+
+#left-payment-mode img {
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+#payment-cod-button-div {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    /* background-color: red; */
+}
+
 #payment-debit{
-    border: 1px solid gainsboro;
+    /* border: 1px solid gainsboro; */
     width: 90%;
     margin: 20px auto;
     text-align: center;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     display: block;
 }
 #payment-debit>div{
@@ -85,17 +121,19 @@ body{
     align-items: center;
 }
 #payment-debit>div>img{
-    width: 20px;
+    width: 30px;
     height: 20px;
     margin: 0 3% 0 10%;
 }
 input{
     display: block;
     width: 90%;
+    font-size: 18px;
     margin: auto;
-    padding: 10px 5px;
+    padding: 15px 5px;
     margin-bottom: 10px;
-    border-radius: 5px;
+    outline: none;
+    /* border-radius: 5px; */
     border: 1px solid gray
 }
 #payment-debit>input:nth-child(4){
@@ -108,12 +146,21 @@ input{
     display: inline;
     margin: 0 2% 10px;
 }
+
+
+
+
 #card-payment-div2{
+    width: 100%;
+    margin: auto;
     display: flex;
-align-items: center;
+/* align-items:flex-start; */
+justify-content:flex-start;
+background-color: red;
 }
-#card-payment-div2>label{
+#card-payment-div2>span{
     width: 90%;
+    /* margin-left: -60px; */
     font-weight: bold;
 }
 #card-payment-div2>input{
@@ -131,7 +178,7 @@ align-items: center;
     color: white;
     font-size: 20px;
     border: none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-bottom: 10px;
 }
 #payment-wallet{
@@ -144,7 +191,7 @@ align-items: center;
     margin: auto;
     align-items: center;
     margin-bottom: 20px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-top: 10px;
 }
 #payment-wallet>div>img{
@@ -170,7 +217,7 @@ width: 280px;
     margin: auto;
     align-items: center;
     margin-bottom: 20px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-top: 10px;
 }
 #payment-net-banking>div>img{
@@ -186,7 +233,7 @@ width: 280px;
     margin-left: 20%;
 }
 #payment-net-other-arrow{
-    border-radius: 50%;
+    /* border-radius: 50%; */
     height: 20px;
     margin-left: 50%;
     background-color: transparent;
@@ -200,7 +247,7 @@ width: 280px;
 }
 #payment-upi{
     border: 1px solid #eee;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin: 10px;
     text-align: center;
     display: none;
@@ -211,7 +258,7 @@ width: 280px;
     margin: auto;
     align-items: center;
     margin-bottom: 20px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-top: 10px;
 }
 #payment-upi>div>img{
@@ -246,26 +293,29 @@ width: 280px;
     color: white;
     font-size: 20px;
     border: none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-bottom: 10px;
 }
-/* #payment-cod-button>p:nth-child(1){
-    text-decoration: line-through;
-    color: gray;
-    font-size: 10px;
-} */
 
-/* #payment-wallet>div>input{
-    border: 1px solid pink;
-}
-#payment-wallet>div>div>img{
-    height: 30px;
-    margin-right: 20px;
+#payment-cod button{
+    width: 90%;
+    padding: 15px 20px;
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+    border: none;
+    /* border-radius: 5px; */
+    margin-bottom: 10px;
 }
 
-#right-payment-mode{
-    border: 1px solid tomato;
-    width: 100%;
+#payment-mode input {
+    border: none;
+    border-bottom: 1px solid grey;
 }
- */
 
+#payment-cod {
+    width: 90%;
+    padding: 10px;
+    margin-left: 5px;
+    border: 1px solid #eee;
+}

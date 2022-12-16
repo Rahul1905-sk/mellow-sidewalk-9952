@@ -1,0 +1,89 @@
+body {
+  background: #3494e6;
+  background: -webkit-linear-gradient(to right, #75e955, #e3beec);
+  background: linear-gradient(to right, #e46ed8, #415fb8);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#Admin-Logo{
+    width: 25%;
+    margin: auto;
+    padding-top: 25px;
+}
+#Admin-Logo>img{
+    width: 100%;
+}
+#Login-body>h1{
+    margin-top: 20px;
+}
+#Login-body {
+  width: 640px;
+  height: 600px;
+  background-color: white;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 8px;
+  text-align: center;
+}
+#Login-body>p{
+    color: #7e7f81;
+    margin-top: -10px;
+}
+#secPtag{
+    margin-bottom: 30px;
+}
+
+#Main-Login {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  display: grid;
+}
+#Main-Login > input,
+#Main-Login > button {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: rgb(246, 246, 246);
+  border: 1px solid #cdcdcd;
+}
+#Main-Login>#submit {
+  background-color: #7c3aed;
+  cursor: pointer;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+#Main-Login>#submit:hover{
+    background-color: #8454d7;
+}
+#Main-Login>#resetPassword{
+    background-color: white;
+    border: none;
+    font-size: 12px;
+    color: #7e7f81;
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+
+  #Login-body {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 430px) {
+
+    #Login-body>h1{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    #Login-body>p{
+        font-size: 13px;
+    }
+    #Main-Login{
+        width: 75%;
+    }
+    #Login-body{
+        height: 450px;
+        margin-top: 25px;
+    }
+  }

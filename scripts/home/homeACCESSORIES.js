@@ -39,28 +39,29 @@ const slider3=()=>{
 
     let cat = [
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-accessories-covers-1662043886.jpg",
+        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-MobileCovers-1668754848.jpg",
         "head": "Mobile Covers"
+      },
+      {
+        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-Bags-1668754847.jpg",
+        "head": "Backpacks"
       },
       {
         "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-accessories-slideers-1662043888.jpg",
         "head": "Sliders"
       },
+      
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-accessories-bags-1662043885.jpg",
-        "head": "Backpacks"
-      },
-      {
-        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-accessories-flipflops-1662043887.jpg",
+        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-Sliders-1668754849.jpg",
         "head": "Flip Flops"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-accessories-books-1662043886.jpg",
+        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-Books-1668754847.jpg",
         "head": "Note Books"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-accessories-shoes-1662043887.jpg",
-        "head": "Casual Shoes"
+        "img": "https://images.bewakoof.com/uploads/grid/app/category-box-new-Caps-1668754848.jpg",
+        "head": "Cap"
       }
     ]
   
@@ -76,7 +77,7 @@ const slider3=()=>{
           h3.innerText = elem.head;
     
        
-          div.append(image,h3);
+          div.append(image);
     
           document.getElementById("box2acc").append(div);
       })
@@ -119,36 +120,36 @@ x2 = setInterval(function () {
   const box3_acc=()=>{
     let  PopularM= [
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/New-thumbnail-DOTD-Men-1664527322.gif",
-        "cat": "Design of the Day"
+        "img": "https://images.bewakoof.com/uploads/grid/app/newest-thumbnail-cap-1668059495.jpg",
+        "cat": "CAPS"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/bestseller-1660921671.jpg",
-        "cat": "Best Sellers"
+        "img": "https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-common-BestsellerAccessories-1668431630.gif",
+        "cat": "BEST SELLERS"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/custom-men--1660921672.jpg",
-        "cat": "Customization"
+        "img": "https://images.bewakoof.com/uploads/grid/app/hotdeals-2-1668492730.jpg",
+        "cat": "HOT DEAL"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/new-arrival-1660921673.jpg",
+        "img": "https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-common-NewArrivalsAccessories-1668431632.gif",
         "cat": "New Arrivals"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/last-sizes-1660921673.jpg",
-        "cat": "Last Sizes Left"
+        "img": "https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-mobilecover-1668431633.jpg",
+        "cat": "MOBILE COVER"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/plus-size-1660921675.jpg",
-        "cat": "Plus Size"
+        "img": "https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-common-sliders-1668431632.gif",
+        "cat": "SLIDERS"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/offiicale-merch-1660921674.jpg",
-        "cat": "Official Collaboration"
+        "img": "https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-common-collab-1668431631.gif",
+        "cat": "OFFICIAL COLLABORATION"
       },
       {
-        "img": "https://images.bewakoof.com/uploads/grid/app/PC-1660921675.jpg",
-        "cat": "Personal Care"
+        "img": "https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-common-mug-1668431631.jpg",
+        "cat": "MUG"
       }
     ]
     
