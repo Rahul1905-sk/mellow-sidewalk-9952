@@ -35,7 +35,7 @@ const validate = async (mail, pass) => {
     if (pass == Pass) {
       alert("login Sucessfull");
       sessionStorage.setItem("Admin-login", JSON.stringify(DetailsArrAdmin));
-      location.href = "../admin_side/dashboard.html";
+      location.href = "../index.html";
     } else {
       alert("Invalid Password");
     }
