@@ -6,7 +6,7 @@
     document.getElementById("LIVE").addEventListener("click", () => {
       flag1 = true;
   
-      if (flag1 == true) {
+      if (flag1 === true) {
         document.getElementById("Live_profile").style.display = "block";
         document.getElementById("LIVE").style.borderBottomColor = "gold";
         document.getElementById("LIVE").style.fontWeight = "800";
@@ -27,9 +27,7 @@
         document.getElementById("Winter_profile").style.display = "none";
         document.getElementById("WINTER").style.borderBottomColor = "transparent";
         document.getElementById("WINTER").style.fontWeight = "300";
-  
-  
-        flag1 = false;
+       flag1 = false;
       }
     });
 
@@ -57,8 +55,6 @@
         document.getElementById("Winter_profile").style.display = "none";
         document.getElementById("WINTER").style.borderBottomColor = "transparent";
         document.getElementById("WINTER").style.fontWeight = "300";
-  
-  
         flag2 = false;
       }
     });
@@ -66,7 +62,7 @@
     document.getElementById("WOMEN").addEventListener("click", () => {
       flag3 = true;
   
-      if (flag3 == true) {
+      if (flag3 === true) {
         document.getElementById("Live_profile").style.display = "none";
         document.getElementById("LIVE").style.borderBottomColor = "transparent";
         document.getElementById("LIVE").style.fontWeight = "300";
@@ -95,7 +91,7 @@
     document.getElementById("ACCE").addEventListener("click", () => {
       flag4 = true;
   
-      if (flag4 == true) {
+      if (flag4 === true) {
         document.getElementById("Live_profile").style.display = "none";
         document.getElementById("LIVE").style.borderBottomColor = "tranparent";
         document.getElementById("LIVE").style.fontWeight = "300";
@@ -115,8 +111,6 @@
         document.getElementById("Winter_profile").style.display = "none";
         document.getElementById("WINTER").style.borderBottomColor ="tranparent";
         document.getElementById("WINTER").style.fontWeight = "300";
-  
-  
         flag4 = false;
       }
     });
@@ -124,7 +118,7 @@
     document.getElementById("WINTER").addEventListener("click", () => {
       flag5 = true;
   
-      if (flag5 == true) {
+      if (flag5 === true ) {
     
         document.getElementById("Live_profile").style.display ="none";
         document.getElementById("MENS").style.borderBottomColor = "transparent";
@@ -145,8 +139,11 @@
         document.getElementById("Winter_profile").style.display = "block";
         document.getElementById("WINTER").style.borderBottomColor = "gold";
         document.getElementById("WINTER").style.fontWeight = "800";
-       flag5=false;
+        flag5=false;
       }
+      
+      
+      
     });
 
   }

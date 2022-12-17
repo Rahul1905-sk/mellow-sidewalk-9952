@@ -52,10 +52,8 @@ const slider1=()=>{
       image.setAttribute("src", elem.image);
       image.addEventListener("click", function () {  
           
-        localStorage.setItem("wind", JSON.stringify(el));
+        localStorage.setItem("wind", JSON.stringify(elem));
         window.location.href = "detail.html";
-    
-       // window.location.href = "products.html";
       });
       
       var name = document.createElement("h5");
@@ -124,6 +122,7 @@ const slider1=()=>{
       var image = document.createElement("img");
       image.setAttribute("src", elem.img);
       image.addEventListener("click", function () {    
+       
         window.location.href = "products.html";
       });
       var h3 = document.createElement("h5");
@@ -150,7 +149,8 @@ const slider1=()=>{
           image.setAttribute("src", elem.image);
           image.addEventListener("click", function () {
             
-            window.location.href = "products.html";
+            localStorage.setItem("wind", JSON.stringify(elem));
+        window.location.href = "detail.html";
           });
     
           var name = document.createElement("h5");
@@ -178,7 +178,8 @@ const slider1=()=>{
           image.setAttribute("src", elem.image);
           image.addEventListener("click", function () {
            
-            window.location.href = "products.html";
+            localStorage.setItem("wind", JSON.stringify(elem));
+        window.location.href = "detail.html";
           });
           var name = document.createElement("h4");
           name.innerText = elem.title;
