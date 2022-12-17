@@ -49,7 +49,8 @@ const slider2=()=>{
     var image = document.createElement("img");
     image.setAttribute("src", elem.image);
     image.addEventListener("click", function () {    
-      window.location.href = "products.html";
+      localStorage.setItem("wind", JSON.stringify(elem));
+        window.location.href = "detail.html";
     });
     var name = document.createElement("h5");
     name.innerText = elem.title;
@@ -140,7 +141,8 @@ const slider2=()=>{
           var image = document.createElement("img");
           image.setAttribute("src", elem.image);
           image.addEventListener("click", function () {
-             window.location.href = "products.html";
+            localStorage.setItem("wind", JSON.stringify(elem));
+        window.location.href = "detail.html";
           });
     
           var name = document.createElement("h5");
@@ -165,7 +167,8 @@ const slider2=()=>{
           image.setAttribute("src", elem.image);
           image.addEventListener("click", function () {
            
-            window.location.href = "products.html";
+            localStorage.setItem("wind", JSON.stringify(elem));
+        window.location.href = "detail.html";
           });
           var name = document.createElement("h4");
           name.innerText = elem.title;
