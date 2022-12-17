@@ -12,7 +12,3 @@ navbar1.innerHTML = navbar();
 
 let footer1=document.getElementById("footer");
 footer1.innerHTML = footerSection();
-
-
-
-

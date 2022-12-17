@@ -5,7 +5,8 @@ function footerSection() {
 
         <!-- customer section start -->
 
-        <h1 <a href=".index.html">BEcool</h1></a>
+       
+        <a href="./index.html"><img id="footer_logo" src="./images/logo4.png"></img></a>
 
         <div class="customer-section-grid">
 
