@@ -81,9 +81,15 @@
 #full3>p{
    color: gray;
 }
+
 #full5+h3:nth-child(1){
    margin-top: 10px;
 }
 #full3{
     margin-left: 200px;
+}
+#full1>img{
+    padding:60px;
+    border:1px solid black;
+
 }

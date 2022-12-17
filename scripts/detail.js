@@ -25,8 +25,9 @@ const appendData = (data) => {
   document.getElementById("full2").append(cName, pName, pPrice, des, rating);
 };
 appendData(data);
-var bag=document.getElementById("bag").addEventListener("click",()=>{
-    addbag()
+const bag=document.getElementById("bag").addEventListener("click",()=>{
+    
+        addbag();
 })
 var bagarr=JSON.parse(localStorage.getItem("cart"))||[]
 

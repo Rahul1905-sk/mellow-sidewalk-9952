@@ -102,6 +102,7 @@
 .item-card > img {
   width: 260px;
   height:400px;
+  padding-bottom:10px;
 
 }
 
@@ -119,5 +120,21 @@
   margin-bottom: 5px;
 }
 
+#anker{
+  
+  font-size: 15px;
+  width : 100%;
+  background-color:white;
 
+  padding: 10px;
 
+}
+#anker>p>a{
+  text-decoration:none;
+  color:black;
+
+  
+}
+#anker>p{
+  margin-bottom:10px
+}
