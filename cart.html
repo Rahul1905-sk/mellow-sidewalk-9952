@@ -26,10 +26,209 @@
             padding: 10px;
             border-radius: 6px;
         }
+       #second{
+        margin-top: 20px;
+       }
+        
+        #main{
+            display: flex;
+            margin: auto;
+            width: 80%;
+        }
+        #items{
+            width: 50%;
+        }
+        #box{
+            display:flex;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #d8dddc; 
+           
+        }
+        #second{
+            padding: 10px 15px 15px 15px;   
+            border:1px solid #c4c7c7;
+            border-radius: 5px; 
+            width:100%;
+        }
+        #prices{
+            width:67%;
+            /* border:1px solid red */
+        }
+        #prices>p{
+            /* color:rgb(81, 80, 80); */
+            color:#333e45
+        }
+        #img_div{
+            width:30%;
+            /* border: 1px solid green; */
+            text-align: end;
+        }
+        #img_div>img{
+            width:45%;
+        }
+        #second>button{
+            border: none;
+            margin-top: 5px;
+            padding: 10px 40px;
+            margin-left: 10%;
+        }
+        #detail_div{
+            width:42%;
+            margin-left: 5%;
+        }
+        .discount{
+            width:100%;
+            border:1px solid rgb(180, 179, 179);
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: -10px;
+        }
+        .code{
+            font:caption;
+            font-size: 15px;
+            color:#5e6264;
+            line-height: 22px;
+            padding:0px 15px;
+        }
+        #price_div{
+            width:100%;
+            border: 1px solid #dedcdc;
+        }
+        #redeem_div{
+            display: flex;
+            justify-content: space-between;
+            background-color: #ecf6f5;
+            padding: -8px;
+            margin: 4px;
+            border-radius: 8px;
+        }
+        #redeem_div>p:nth-child(1){
+            color:#4fa4a3;
+            font: caption;
+            font-size: 13px;
+            margin-left: 10px;
+        }
+        #rd{
+            color:#4fa4a3;
+            font: caption;
+            font-size: 13px;
+            font-weight: bold;   
+            margin-right: 15px;
+        } 
+        #prs{
+            background-color: #f5f5f5;
+            padding:2px 0px;
+            border-top: 2px solid #eaeaea;
+           
+        }
+        #prs>p{
+            font: caption;
+            font-size: 13px;
+            font-weight: bolder;
+            margin-left: 13px;
+        }
+        .price{
+            display: flex;
+            justify-content: space-between;
+        }
+        .price>p{
+            margin-left: 15px;
+            margin-right: 18px;
+            font: caption;
+            font-size: 13px;
+        }
+        #price_div{
+            margin-top: 15px;
+        }
+        #free{
+            color:#2b9355;
+        }
+        #saving_div{
+            display: flex;
+            width:90%;
+            margin: auto;
+            margin-top: 10px;
+           height:28px;
+           align-items: center;
+            background-color: #e8f3e5;
+            border-radius: 25px;
+        }
+        #saving_div>p{
+            font: caption;
+            font-size: 13px;
+            margin-left: 15px;
+            color:#2b9355;
+        }
+        #last-div{
+            display: flex;
+            border-top: 2px solid #eaeaea;
+            margin-top: 7%;
+            padding: 13px;
+            justify-content: space-between;
+        }
+        #address{
+            width:55%;
+            border: none;
+            background-color: #4fa4a3;
+            color: white;
+            font-size: 17px;
+            border-radius: 7px;
+        }
+        h2{
+            margin-left: 10%;
+        }
     </style>
 </head>
 <body>
+    <h2>My Bag : <span id="length"></span> (items)</h2>
     <div id="empty_bag"></div>
+    <div id="main">
+
+
+        <div id="items"></div>
+        <div id="detail_div">
+            <div class="discount">
+                <p class="code">Get Rs.200 instant discount on your First Purchase above Rs.999. Coupon code -NEW200</p>
+            </div>
+            <div class="discount">
+                <p class="code">Whistles! Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW20. Applicable for new customers only!</p>
+            </div>
+            <div id="price_div">
+                <div id="redeem_div">
+                    <p>Have a coupon / Referral / Gift Card ? <p>
+                    <p id="rd">Redeem >></p>
+                </div>
+                <div id="prs">
+                    <p>PRICE SUMMARY</p>
+                </div>
+                <div class="price">
+                    <p>Total MRP (Incl. of taxes) </p>
+                    <p id="total"></p>
+                </div>
+                <div class="price">
+                    <p>Shipping Charges </p>
+                    <p id="free">FREE</p>
+                </div>
+                <div class="price">
+                    <p>Bag Discount </p>
+                    <p id="off"></p>
+                </div>
+                <div class="price">
+                    <p>Subtotal </p>
+                    <p id="final_price"></p>
+                </div>
+                <div id="saving_div">
+                    <p>You are saving <span id="save_span"></span> on this order </p>
+                </div>
+                <div id="last-div">
+                    <p>Total <span id="span_price"></span></p>
+                    <button id="address">ADD ADDRESS</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
 </body>
 </html>
 <script src="./scripts/cart.js"></script>
