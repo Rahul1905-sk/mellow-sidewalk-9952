@@ -1,4 +1,3 @@
-
 import {navbar} from "../components/navbar.js"
 import {footerSection} from "../components/footer.js"
 
@@ -10,7 +9,7 @@ navbardiv.innerHTML = navbar();
 
 
 
-let url="http://localhost:3000/mensjacket"
+let url="http://localhost:3000/caps"
 
 
 
@@ -39,7 +38,7 @@ const getData = async () => {
         img.src = el.image;
   
         var cName = document.createElement("h3");
-        cName.innerText = "BEcool";
+        cName.innerText = "Bewakoof";
   
         var pName = document.createElement("p");
         pName.innerText = el.title.slice(0,25);
