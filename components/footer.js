@@ -5,7 +5,7 @@ function footerSection() {
 
         <!-- customer section start -->
 
-        <h1>BeCooL</h1>
+        <h1 <a href=".index.html">BEcool</h1></a>
 
         <div class="customer-section-grid">
 
