@@ -1,4 +1,12 @@
 
+let voices = window.speechSynthesis.getVoices();
+
+function textTospeech (text) {
+    let utternance = new SpeechSynthesisUtterance(text);
+    utternance.voice = window.speechSynthesis.getVoices()[3] ;
+    speechSynthesis.speak(utternance);
+}
+
 
 var paymentDebitButton = document.getElementById("payment-debit-button-div");
 var paymentWalletButton = document.getElementById("payment-wallet-button-div");
@@ -165,40 +173,47 @@ paymentNetBankingButton.addEventListener("click", ()=>{
 
 });
 
+localStorage.setItem("userkanaam", "anukul")
+
 
 document.getElementById("card-pay-now-button").addEventListener("click" , function(){
-
+  let name = localStorage.getItem("userkanaam")
+  
   var person = prompt("Please enter your OTP", "");
   if(person == "1234"){
-alert("We are processing your payment !");
-window.location.href = "./orderPlaced.html";
+    alert("We are processing your payment !");
+textTospeech(`@ Thank you for order ${name}`)
+
+setTimeout(() => {
+  window.location.href = "./orderPlaced.html";
+}, 1);
 }
-  else{
-alert("Wrong OTP, Try Again");
+else{
+  alert("Wrong OTP, Try Again");
 }  
 });
 
 
 
 function paymentP() {
- 
-    paymentUpiButton.style.backgroundColor = "whitesmoke";
-    paymentUpiButton.style.border = "none";
-    paymentNetBankingButton.style.backgroundColor = "whitesmoke";
-    paymentNetBankingButton.style.border = "none";
-    paymentWalletButton.style.backgroundColor = "whitesmoke";
-    paymentWalletButton.style.borderLeft = "none";
-    paymentCodButton.style.backgroundColor = "whitesmoke";
-    paymentCodButton.style.borderLeft = "none";
-    paymentDebitButton.style.backgroundColor = "white";
-    paymentDebitButton.style.borderLeft = "5px solid #42a2a2";
-
-
-    paymentWallet.style.backgroundColor = "whitesmoke";
-    paymentUpi.style.backgroundColor = "whitesmoke";
-    paymentNetBanking.style.backgroundColor = "whitesmoke";
-    paymentCod.style.backgroundColor = "whitesmoke";
-    paymentDebit.style.backgroundColor = "white";
+  
+  paymentUpiButton.style.backgroundColor = "whitesmoke";
+  paymentUpiButton.style.border = "none";
+  paymentNetBankingButton.style.backgroundColor = "whitesmoke";
+  paymentNetBankingButton.style.border = "none";
+  paymentWalletButton.style.backgroundColor = "whitesmoke";
+  paymentWalletButton.style.borderLeft = "none";
+  paymentCodButton.style.backgroundColor = "whitesmoke";
+  paymentCodButton.style.borderLeft = "none";
+  paymentDebitButton.style.backgroundColor = "white";
+  paymentDebitButton.style.borderLeft = "5px solid #42a2a2";
+  
+  
+  paymentWallet.style.backgroundColor = "whitesmoke";
+  paymentUpi.style.backgroundColor = "whitesmoke";
+  paymentNetBanking.style.backgroundColor = "whitesmoke";
+  paymentCod.style.backgroundColor = "whitesmoke";
+  paymentDebit.style.backgroundColor = "white";
   
 
     document.getElementById("payment-debit").style.display = "block";
@@ -207,7 +222,7 @@ function paymentP() {
     document.getElementById("payment-net-banking").style.display = "none";
     document.getElementById("payment-cod").style.display = "none";
     // document.getElementById("payment-net-banking").style.display = "none";
-
-}
-
-paymentP()
+    
+  }
+  
+  paymentP()

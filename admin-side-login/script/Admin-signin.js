@@ -35,6 +35,7 @@ const validate = async (mail, pass) => {
     if (pass == Pass) {
       alert("login Sucessfull");
       sessionStorage.setItem("Admin-login", JSON.stringify(DetailsArrAdmin));
+      textTospeech("@ Happy to see you Rahul")
       location.href = "../index.html";
     } else {
       alert("Invalid Password");
@@ -72,3 +73,15 @@ resetPass.onclick = async () => {
     alert("Invalid UserID");
   }
 };
+
+
+
+
+
+let voices = window.speechSynthesis.getVoices();
+
+function textTospeech (text) {
+    let utternance = new SpeechSynthesisUtterance(text);
+    utternance.voice = window.speechSynthesis.getVoices()[3] ;
+    speechSynthesis.speak(utternance);
+}
