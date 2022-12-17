@@ -294,15 +294,15 @@ margin: 30px 0px 30px 10%;
 
   justify-content: center;
   align-items: center;
-  width: 95%;
-  margin: 30px 0px 30px 10%;
+  width: 99%;
+  margin: 30px 0px 30px 0px;
   
 }
 .Three_in_one div{
   cursor: pointer;
      width: auto;
      display: flex;
-     width: 90%;
+     width: 95%;
      justify-content: center;
      align-items: center;
     
@@ -585,3 +585,271 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       #carouselacc ~ span:hover { color: palevioletred; cursor: pointer; }
 
 /*    ____________________*/
+
+/* ...responsive code   ____________________*/
+
+
+/*media addition start */
+
+@media all  and (max-width:1000px){
+ 
+  #navbar2 {
+    display:grid;
+     grid-template-rows: repeat(1,1fr);
+     grid-template-columns: repeat(2,1fr);
+  
+    }
+
+ /*.........................................*/
+
+ .box1  {
+  width: 100%;
+ 
+}
+
+
+ /*.........................................*/
+    .box3 {
+    display:grid;
+    height:430px;
+      grid-template-columns: repeat(4,1fr);
+      margin-left: 30px;
+    }
+    .box3 > .pop{
+      height:100px;
+      width: 100px;
+      }
+     
+    
+     /*.........................................*/
+     .box4> div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height:200px;
+        margin: 10px 0px 10px 10%;
+        }
+        .box4> div div{height:200px; }
+        #new_m{
+          height: 600px;
+          width: 80%;
+          margin-right: 20px;
+        }
+        #new_w{
+          height: 600px;
+          width: 80%;
+        }
+ /*.........................................*/
+
+ .box7> div{
+  gap: 10px;
+  }
+ /*.........................................*/
+
+  .box8>div{
+    gap: 25px;
+    margin: 17px;
+  }
+
+   /*.........................................*/
+
+   .Twoimg div{
+    cursor: pointer;
+ 
+       gap:15px;
+   }
+
+ /*.........................................*/
+ #carouselm,#carouselw , #carouselacc { 
+  height: 250px;}
+ /*.........................................*/
+  .Three_in_one div img{width:250px;}
+
+}
+
+
+@media all and (min-width: 540px) and (max-width: 900px){
+  #navbar2 {
+     display:grid;
+      grid-template-rows: repeat(2,1fr);
+      grid-template-columns: repeat(2,1fr);
+     font-size: 14px;
+     }
+
+/*.........................................*/
+
+.box1  {
+  width: 99%;
+ 
+}
+
+
+      /*.........................................*/
+     .box3 {
+      height:450px;
+      display:grid;
+      margin-left: 30px;
+        grid-template-columns: repeat(4,1fr);
+      }
+     
+     /*.........................................*/
+      .box4> div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height:200px;
+        margin: 10px 0px 10px 10%;
+        }
+        .box4> div div{
+         
+          height:200px;
+        
+          }
+        #new_m{
+          height: 600px;
+          width: 80%;
+          margin-right: 20px;
+        }
+        #new_w{
+          height: 600px;
+          width: 80%;
+        }
+
+         /*.........................................*/
+      
+
+         .box7> div{
+          gap: 10px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          }
+
+     /*.........................................*/
+.box8{
+  height: 600px;
+}
+          .box8>div{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 15px;
+          }
+
+   /*.........................................*/
+
+   .Twoimg div{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows:repeat(2,1fr);
+
+    gap:10px;
+   }
+
+  /*.........................................*/
+   #carouselm,#carouselw , #carouselacc { 
+    height: 200px;}
+ /*.........................................*/
+
+    .Three_in_one div img{width:200px;}
+ /*.........................................*/
+}
+
+
+
+
+@media all and (max-width: 560px) {
+  #navbar2 {
+    display:grid;
+     grid-template-rows: repeat(3,1fr);
+     grid-template-columns: repeat(2,1fr);
+    font-size: 11px;
+    }
+
+/*.........................................*/
+
+.box1  {
+  width: 100%;
+ 
+}
+
+
+     /*.........................................*/
+    .box3 {
+      height:550px;
+      display:grid;
+        grid-template-columns: repeat(4,1fr);
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+       /*.........................................*/
+      #new_m{
+        height: 500px;
+        width: 80%;
+        margin-right: 20px;
+      }
+      #new_w{
+        height: 500px;
+        width: 80%;
+      }
+    
+      .box4> div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+       
+        }
+        .box div div{
+          height:200px;
+        }
+        #new_m{
+          height: 600px;
+          width: 80%;
+        }
+        #new_w{
+          height: 600px;
+          width: 80%;
+        }
+
+         /*.........................................*/
+
+
+         .box7> div{
+          gap: 10px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          }
+
+
+     /*.........................................*/
+
+     .box8{
+      height: 850px;
+    }
+          .box8>div{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: auto;
+            gap: 10px;
+            margin-right: 40px;
+            border: 0px solid green;
+           font-size: 9px;
+          }
+
+
+   /*.........................................*/
+
+   .Twoimg div{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows:repeat(2,1fr);
+   
+    gap:8px;
+   }
+ /*.........................................*/
+   #carouselm,#carouselw , #carouselacc { 
+    height: 200px;}
+ /*.........................................*/
+    .Three_in_one div img{width:130px;}
+
+}
+
+/*media addition end fw20_0095*/
