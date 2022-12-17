@@ -32,6 +32,28 @@
     border-radius: 5px;
 }
 
+#loader img{
+
+    width: 100px;
+    height: 70px;
+    background-color: white;
+    border-radius:0.5rem ;
+    box-shadow: 0 0 10px grey;
+}
+
+#loader {
+    display: grid;
+place-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+   
+}
+
+
+
+
 /* #lll:before {
     background: rgba(0,0,0,.1); 
     display: block;

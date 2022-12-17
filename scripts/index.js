@@ -20,6 +20,8 @@
 
 import {footerSection} from "../components/footer.js"
 import {navbar} from "../components/navbar.js"
+import {loader} from "../components/loader.js"
+loader()
 
 
 import {homeprofiles} from "./home/homeprofiles.js"
