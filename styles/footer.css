@@ -173,11 +173,37 @@ h4{
     font-weight: bold;
 
 }
-#footer-last-section-para p{
-    /* border:2px solid white; */
+/* #footer-last-section-para p{
+    border:2px solid white;
     line-height: 25px;
     font-size: 18px;
     margin:2% 0;
+color: white;
 
+} */
+
+#footer-last-section-para {
+    width: 75%;
+    margin: auto;
+    padding-bottom: 150px;
+}
+
+#footer-last-section-para p,#footer-last-section-para h3{
+
+    font-family: "montserrat", sans-serif;;
+
+font-weight: 400;
+font-size: 17px;
+line-height: 20px;
+color: rgba(255, 255, 255, 0.9);
 
 }
+#footer-last-section-para h3{
+
+    font-family: "montserrat", sans-serif;;
+
+    font-weight: 700;
+    font-size: 19px;
+  
+    
+    } 

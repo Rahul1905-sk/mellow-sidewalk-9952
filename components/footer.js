@@ -32,6 +32,10 @@ function footerSection() {
                 <h4>Connect with us</h4>
                 <p><a href="">4.7M People Like this</a></p>
                 <p><a href="">1M Followers</a></p>
+                <div id=footer_icon>
+                    <img src="./images/footerLogos.png" alt="">
+                </div>
+                
             </div>
             <div>
                 <h4>Keep up to date</h4>
