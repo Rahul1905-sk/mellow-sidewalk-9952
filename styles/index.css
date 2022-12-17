@@ -103,6 +103,7 @@ place-items: center;
   width:98%;
   display: grid;
   place-items: center;
+  overflow: hidden;
 }
 .slide-track{
 width: 98%;
