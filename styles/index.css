@@ -16,14 +16,16 @@ font-family: 'Poppins', sans-serif;
 
 
 #navbar2 {
-  margin-top: 50px;
+  margin-top: 5px;
    display: flex;
    justify-content: space-evenly;
    align-items: center;
    text-transform: uppercase;
    font-size: 18px;
    padding: 20px 24px 0px 24px;
-   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 25px 20px -20px;
   
    }
  
@@ -44,12 +46,12 @@ font-family: 'Poppins', sans-serif;
    }
   
    .sale {
-    width: auto;
+
      display: grid;
      justify-content: center;
      align-items: center;
      width: 90%;
-     margin: 30px 0px 30px 30px;
+     margin: 30px 0px 30px 60px;
      
        }
      .sale div{
@@ -77,20 +79,18 @@ font-family: 'Poppins', sans-serif;
 .slider{
   height:auto;
   margin: 15px;
- position: relative;
+  position:relative;
   width:98%;
   display: grid;
   place-items: center;
-  overflow: hidden;
 }
 .slide-track{
 width: 98%;
-overflow: hidden;
 margin: 10px 10px;
 margin-right: 10px;
 display: flex;
 width: calc(350px*8);
-animation: scroll 40s linear infinite;
+animation: scroll 45s linear infinite;
 }
 .slide-track:hover{
   animation-play-state: paused;
@@ -117,6 +117,8 @@ transform: translateX(calc(-250px*8));
 .slide>img{
   width: 100%;
   transition: transform 3s;
+
+
 }
 .slide>img:hover{
   transform: translateZ(20px);
@@ -125,10 +127,10 @@ transform: translateX(calc(-250px*8));
 
 .slider::before,
 .slider::after{
-  background: linear-gradient( to right,rgba(255,255,255,1)0%,rgba(255,255,255,0)100%);
+ background: linear-gradient( to right,rgba(255,255,255,1)0%,rgba(255,255,255,0)100%);
   content:"";
   height: 100px;
-  position: absolute;
+ position: absolute;
   width: 15%;
   z-index: 1;
 }
@@ -148,7 +150,7 @@ transform: translateX(calc(-250px*8));
   cursor: pointer;
   width: 98%;
   text-align: center;
-  margin: 30px 0px 30px 0px;
+  margin: 30px 0px 60px 0px;
   border: 0px solid red;
 }
 
@@ -209,8 +211,14 @@ width: auto;
   text-align: center;
 }
 
-
-
+#new_m{
+  height: 300px;
+  width: 80%;
+}
+#new_w{
+  height: 300px;
+  width: 80%;
+}
 .box4> div{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -417,6 +425,7 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin: 0px 0px 20px 22px; 
   overflow: hidden; 
   height: 420px; 
+ 
 }
 #spinnerm { 
   transform-style: preserve-3d; 
