@@ -254,6 +254,10 @@ visibility: visible;
     position: relative;
     display: inline-block;
   }
+
+  #navbar{
+    z-index: 7;
+  }
   
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {

@@ -34,8 +34,10 @@
 
 #loader img{
 
-    width: 100px;
-    height: 70px;
+    /* width: 100px;
+    height: 70px; */
+    width: 150px;
+    height: 100px;
     background-color: white;
     border-radius:0.5rem ;
     box-shadow: 0 0 10px grey;
