@@ -291,6 +291,17 @@ visibility: visible;
     font-weight: bolder;
     /* background-color: #3e8e41; */
 }
+#cart_no{
+    margin-left: -25px;
+    /* border: 1px solid blue; */
+    margin-top: -4px;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    padding: 3px;
+    background-color:#fdd835;
+    border-radius: 5rem;
+}
 
 
 /* @media only screen and (max-width: 600px) {

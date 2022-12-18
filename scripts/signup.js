@@ -1,3 +1,7 @@
+import {navbar} from "../components/navbar.js";
+
+let nav=document.getElementById("navbar");
+nav.innerHTML=navbar();
 
 
 const load=()=>{
@@ -73,7 +77,7 @@ const getData=async()=>{
                 }
             })
             localStorage.setItem("username",obj.name);
-            window.location.href="index.html";
+            window.location.href="email.html";
             
         }else if(obj.mobile.length!==10 ){
             document.getElementById("valid_num").innerText="Please Enter a Valid Mobile Number";

@@ -1,3 +1,7 @@
+import {navbar} from "../components/navbar.js";
+
+let nav=document.getElementById("navbar");
+nav.innerHTML=navbar();
 
 
 document.getElementById("login_btn").onclick=()=>{
@@ -30,15 +34,19 @@ const userlogin=async()=>{
       console.log(res);
       let flag=false;
       let username;
+      let saveemail;
       res.forEach((el)=>{
         if(obj.email==el.email && obj.pass==el.pass){
             flag=true;
             username=el.name;
+            saveemail=el.email;
         }
         console.log(el.email,el.pass);
       })
       if(flag==true){
         localStorage.setItem("username",username);
+        localStorage.setItem("email",saveemail);
+        
         window.location.href="index.html";
       }else{
         alert("Wrong Email or Password");

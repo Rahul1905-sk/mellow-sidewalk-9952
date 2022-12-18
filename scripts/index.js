@@ -51,6 +51,7 @@ carosse2.innerHTML = carousel_aala2();
 carosse3.innerHTML = carousel_aala3();
 
 
+
  let url_a="http://localhost:3000/mensjacket";
   let url1 ="http://localhost:3000/menst-shirt";
   let url2 ="http://localhost:3000/mensshirt";
