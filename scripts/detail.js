@@ -8,6 +8,8 @@ footerdiv.innerHTML = footerSection ()
 let navbardiv = document.querySelector("#navbar");
 navbardiv.innerHTML = navbar();
 
+let cartlength=JSON.parse(localStorage.getItem("cart"));
+document.getElementById("cart_no").innerText=cartlength.length;
 
 let data = JSON.parse(localStorage.getItem("wind"));
 

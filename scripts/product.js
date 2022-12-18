@@ -50,6 +50,8 @@ const getData = async () => {
 
 
 
+        let cartlength=JSON.parse(localStorage.getItem("cart"));
+        document.getElementById("cart_no").innerText=cartlength.length;
     
   
         var rating = document.createElement("p");

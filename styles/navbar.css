@@ -302,6 +302,14 @@ visibility: visible;
     background-color:#fdd835;
     border-radius: 5rem;
 }
+#profile{
+    display:none;
+    margin-top: 5px;
+    margin-left: 12px;
+    margin-right: 20px;
+    width:20px;
+    height:20px;
+}
 
 
 /* @media only screen and (max-width: 600px) {

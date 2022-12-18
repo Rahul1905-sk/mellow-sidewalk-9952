@@ -50,7 +50,20 @@ carosse2.innerHTML = carousel_aala2();
  let carosse3 = document.getElementById("caross3");
 carosse3.innerHTML = carousel_aala3();
 
+let cartlength=JSON.parse(localStorage.getItem("cart"));
+document.getElementById("cart_no").innerText=cartlength.length;
 
+let username=localStorage.getItem("username");
+let useremail=localStorage.getItem("email");
+let usernum=localStorage.getItem("mobile");
+
+if(username!=null && useremail!=null && usernum!=null){
+  document.getElementById("profile").style.display="block";
+  document.getElementById("loginid").style.display="none";
+}else{
+  document.getElementById("profile").style.display="none";
+  document.getElementById("loginid").style.display="block";
+}
 
  let url_a="http://localhost:3000/mensjacket";
   let url1 ="http://localhost:3000/menst-shirt";

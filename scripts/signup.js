@@ -3,6 +3,8 @@ import {navbar} from "../components/navbar.js";
 let nav=document.getElementById("navbar");
 nav.innerHTML=navbar();
 
+let cartlength=JSON.parse(localStorage.getItem("cart"));
+document.getElementById("cart_no").innerText=cartlength.length;
 
 const load=()=>{
     let phone=localStorage.getItem("phone");

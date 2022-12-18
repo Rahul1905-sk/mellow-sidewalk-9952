@@ -6,7 +6,7 @@ function footerSection() {
         <!-- customer section start -->
 
        
-        <a href="./index.html"><img id="footer_logo" src="./images/logo4.png"></img></a>
+        <a href="./index.html"><img id="footer_logo" src="./images/be cool black theme.png"></img></a>
 
         <div class="customer-section-grid">
 
