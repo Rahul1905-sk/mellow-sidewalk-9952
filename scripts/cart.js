@@ -1,4 +1,31 @@
+let data=JSON.parse(localStorage.getItem("cart"))||[];
 
+let sign_email=localStorage.getItem("email");
+document.getElementById("sign_email").innerText=sign_email;
+
+
+if(data.length==0){
+    
+    document.getElementById("empty_bag").style.display="block";
+    document.getElementById("main").style.display="none";
+
+}else{
+    document.getElementById("main").style.display="flex";
+    
+}
+
+let check_add=JSON.parse(localStorage.getItem("address"));
+//console.log(check_add.mobile.length)
+//window.prompt(document.getElementById("main"));
+if(check_add!=null){
+    document.getElementById("address").style.display="none";
+    document.getElementById("continue").style.display="block";
+}else{
+    document.getElementById("address").style.display="block";
+    document.getElementById("continue").style.display="none";
+}
+
+//empty();
 
 const empty=()=>{
     let image=document.createElement("img");
@@ -16,9 +43,9 @@ const empty=()=>{
     document.getElementById("empty_bag").append(image,p,button);
 
 }
-//empty();
+empty();
 
-let data=JSON.parse(localStorage.getItem("cart"))||[];
+
 
 document.getElementById("length").innerText=data.length; 
 
@@ -74,10 +101,7 @@ const appending=(data)=>{
         cont.append(div2);
 
            
-
-      
-
-        //cont2.append(div4)
+      //cont2.append(div4)
 
     })
 
@@ -93,12 +117,7 @@ const removeproduct=(index)=>{
     appending(data);
 }
 
-// let sum=+localStorage.getItem("totalprice")||0;
-// data.forEach((el)=>{
-//     sum+=(+el.price.current_price);
-// })
-// localStorage.setItem("totalprice",sum);
-// console.log(sum)
+
 
 let sum=0;
 data.forEach((el)=>{
@@ -120,60 +139,62 @@ data.forEach((el)=>{
     final+=(+el.price.current_price);
 })
 document.getElementById("final_price").innerText="₹ "+final;
-document.getElementById("span_price").innerText=" ₹ "+final;
-// const appendprice=()=>{
+document.getElementById("span_price").innerText="₹ "+final;
 
-//     let cont2=document.getElementById("detail_div");
-//     cont2.innerHTML=null;
 
-//        let div3=document.createElement("div");
-//         div3.style.border="1px solid #ececec"
-        
-//         let p2=document.createElement("p");
-//         p2.innerText="Get Rs.200 instant discount on your First Purchase above Rs.999. Coupon code -NEW200"
 
-        
-//         let div4=document.createElement("div");
-//         let p3=document.createElement("p");
-//         p3.innerText="Whistles! Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW20. Applicable for new customers only!"
-        
-//         div4.append(p3);
-        
-//         let div5=document.createElement("div");
-//         div5.setAttribute("id","coupon");
-        
-//         let coupon=document.createElement("p");
-//         coupon.innerText="Have a Coupon / Referral / Gift Card ?"
-
-//         let reedem=document.createElement("p");
-//         reedem.innerText="redeem>>";
-
-//         div5.append(coupon,reedem);
-
-//         let div6=document.createElement("div");
-        
-//         let ps=document.createElement("p");
-//         ps.innerText="PRICE SUMMARY";
-
-//         let tm=document.createElement("p");
-//        // tm.innerText=`Total MRP (Incl. of taxes) ${el.price.current_price}`
-
-//         let shp=document.createElement("p");
-//         //shp.innerText="Shipping Charges  FREE";
-
-//         let bd=document.createElement("p");
-//        // bd.innerText=`Bag Discount ${el.price.savings_amount}`
-
-//         let sbt=document.createElement("p");
-//         //sbt.innerText=`Sub Total ${el.price.current_price}`
-
-//         div6.append(ps,tm.shp,bd,sbt);
-
-//         div3.append(p2);
-
-//         cont2.append(div3,div4,div5);
-
+// document.getElementById("address").onclick=()=>{
+    
+//     document.getElementById("address_div").style.display="block";
+//     document.getElementById("main").style.display="none";
 // }
-// appendprice();
+document.getElementById("address").onclick=()=>{
+    
+    document.getElementById("address_div").style.backgroundColor="white"
+    document.getElementById("address_div").style.display="block";
+    document.getElementById("address_div").style.position="absolute";
+    document.getElementById("address_div").style.zIndex="1"
+    document.getElementById("address_div").style.top="100px";
+    document.getElementById("address_div").style.left="300px";
+    // document.getElementById("address_div").style.display="flex"
+    // document.getElementById("address_div").style.placeItems="center"
+    document.getElementById("main").style.opacity="0.2";
+    //document.getElementById("main").style.backgroundColor="black";
 
+}
+
+document.getElementById("svad").onclick=()=>{
+    Addaddress();
+
+    document.getElementById("address_div").style.display="none";
+    document.getElementById("main").style.display="flex";
+    window.location.reload();
+}
+document.getElementById("close").onclick=()=>{
+    document.getElementById("address_div").style.display="none";
+    document.getElementById("main").style.display="flex";
+    // document.getElementById("main").style.backgroundColor="none";
+    document.getElementById("main").style.opacity="1";
+}
+let countr=document.getElementById("country").value=" India";
+const Addaddress=()=>{
+
+    
+    let obj={
+        country:countr,
+        name:document.getElementById("name").value,
+        mobile:document.getElementById("mobile").value,
+        pin:document.getElementById("pin").value,
+        city:document.getElementById("city").value,
+        state:document.getElementById("state").value,
+    }
+    localStorage.setItem("address",JSON.stringify(obj));
+
+    
+}
+
+
+document.getElementById("continue").onclick=()=>{
+    window.location.href="paymentpage.html";
+}
 
