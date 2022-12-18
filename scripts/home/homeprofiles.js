@@ -8,7 +8,7 @@
   
       if (flag1 === true) {
         document.getElementById("Live_profile").style.display = "block";
-        document.getElementById("LIVE").style.borderBottomColor = "gold";
+        document.getElementById("LIVE").style.borderBottomColor = "transparent";
         document.getElementById("LIVE").style.fontWeight = "800";
 
         document.getElementById("Mens_profile").style.display = "none";
@@ -41,7 +41,7 @@
         document.getElementById("LIVE").style.fontWeight = "300";
 
         document.getElementById("Mens_profile").style.display = "block";
-        document.getElementById("MENS").style.borderBottomColor = "gold";
+        document.getElementById("MENS").style.borderBottomColor = "transparent";
         document.getElementById("MENS").style.fontWeight = "800";
   
         document.getElementById("WOMEN_profile").style.display = "none";
@@ -72,7 +72,7 @@
         document.getElementById("MENS").style.fontWeight = "300";
   
         document.getElementById("WOMEN_profile").style.display = "block";
-        document.getElementById("WOMEN").style.borderBottomColor = "gold";
+        document.getElementById("WOMEN").style.borderBottomColor = "transparent";
         document.getElementById("WOMEN").style.fontWeight = "800";
   
         document.getElementById("Accessories_profile").style.display = "none";
@@ -105,7 +105,7 @@
         document.getElementById("WOMEN").style.fontWeight = "300";
   
         document.getElementById("Accessories_profile").style.display = "block";
-        document.getElementById("ACCE").style.borderBottomColor ="gold";
+        document.getElementById("ACCE").style.borderBottomColor ="transparent";
         document.getElementById("ACCE").style.fontWeight = "800";
 
         document.getElementById("Winter_profile").style.display = "none";
@@ -137,7 +137,7 @@
         document.getElementById("ACCE").style.fontWeight = "300";
 
         document.getElementById("Winter_profile").style.display = "block";
-        document.getElementById("WINTER").style.borderBottomColor = "gold";
+        document.getElementById("WINTER").style.borderBottomColor = "transparent";
         document.getElementById("WINTER").style.fontWeight = "800";
         flag5=false;
       }
