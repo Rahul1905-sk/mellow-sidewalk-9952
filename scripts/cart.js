@@ -198,3 +198,6 @@ document.getElementById("continue").onclick=()=>{
     window.location.href="paymentpage.html";
 }
 
+document.getElementById("logo").onclick=()=>{
+    window.location.href="index.html";
+}

@@ -20,6 +20,9 @@ document.getElementById("email").onclick=()=>{
    
 }
 
+let cartlength=JSON.parse(localStorage.getItem("cart"));
+document.getElementById("cart_no").innerText=cartlength.length;
+
 const  Login=()=>{
     if(mobile.length==10){
         localStorage.setItem("phone",mobile);

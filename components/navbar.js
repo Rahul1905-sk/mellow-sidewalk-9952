@@ -186,12 +186,15 @@ function navbar()
          <li><input type="text" id="search_product_by_name" placeholder="search by product,category or collection">
          <div id = "nav_search_bar_fetchData"></div></li>
          <div class="dropdown" id="loginBtn">
-        <button class="dropbtn" >Login</button>
+        <button class="dropbtn" id="loginid" >Login</button>
         <div class="dropdown-content" id="dropdown-content">
           <a href="./login.html">User Login</a>
           <a href="./admin-side-login/Admin-signin.html">Admin Login</a>
         </div>
+        
       </div>
+      <a href="userdetail.html"><img id="profile" src="https://cdn-icons-png.flaticon.com/128/709/709579.png"></a>
+      
      
         <li><a href="cart.html"><span><i class="far fa-heart"></i></span></a></li>
 

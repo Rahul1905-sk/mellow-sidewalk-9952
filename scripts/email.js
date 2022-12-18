@@ -15,6 +15,8 @@ document.getElementById("pass").oninput=()=>{
     check();
 }
 
+let cartlength=JSON.parse(localStorage.getItem("cart"));
+document.getElementById("cart_no").innerText=cartlength.length;
 
 const userlogin=async()=>{
   
@@ -35,17 +37,21 @@ const userlogin=async()=>{
       let flag=false;
       let username;
       let saveemail;
+      let num;
       res.forEach((el)=>{
         if(obj.email==el.email && obj.pass==el.pass){
             flag=true;
             username=el.name;
             saveemail=el.email;
+            num=el.mobile;
+            
         }
         console.log(el.email,el.pass);
       })
       if(flag==true){
         localStorage.setItem("username",username);
         localStorage.setItem("email",saveemail);
+        localStorage.setItem("mobile",num);
         
         window.location.href="index.html";
       }else{

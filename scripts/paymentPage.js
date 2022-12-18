@@ -7,6 +7,8 @@ function textTospeech (text) {
     speechSynthesis.speak(utternance);
 }
 
+let cartlength=JSON.parse(localStorage.getItem("cart"));
+document.getElementById("cart_no").innerText=cartlength.length;
 
 var paymentDebitButton = document.getElementById("payment-debit-button-div");
 var paymentWalletButton = document.getElementById("payment-wallet-button-div");

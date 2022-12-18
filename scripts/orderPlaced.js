@@ -12,3 +12,6 @@ navbar1.innerHTML = navbar();
 
 let footer1=document.getElementById("footer");
 footer1.innerHTML = footerSection();
+
+let cartlength=JSON.parse(localStorage.getItem("cart"));
+document.getElementById("cart_no").innerText=cartlength.length;

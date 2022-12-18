@@ -14,5 +14,7 @@ document.querySelector(".dm").addEventListener("click", ()=> {
         
 })
     
+let cartlength=JSON.parse(localStorage.getItem("cart"));
+document.getElementById("cart_no").innerText=cartlength.length;
 
 
