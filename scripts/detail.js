@@ -1,4 +1,13 @@
 
+import {navbar} from "../components/navbar.js"
+import {footerSection} from "../components/footer.js"
+
+let footerdiv = document.querySelector("#footer");
+footerdiv.innerHTML = footerSection ()
+
+let navbardiv = document.querySelector("#navbar");
+navbardiv.innerHTML = navbar();
+
 
 let data = JSON.parse(localStorage.getItem("wind"));
 
