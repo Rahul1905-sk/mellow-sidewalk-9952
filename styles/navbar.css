@@ -311,6 +311,29 @@ visibility: visible;
     height:20px;
 }
 
+#loader {
+    display: grid;
+place-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+   
+}
+
+
+#loader img{
+
+    /* width: 100px;
+    height: 70px; */
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    border-radius:0.5rem ;
+    box-shadow: 0 0 10px grey;
+}
+
+
 
 /* @media only screen and (max-width: 600px) {
     #nav_bar_top {

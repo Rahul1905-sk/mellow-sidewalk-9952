@@ -39,8 +39,10 @@ const appendProducts = (data, cat) => {
 
     let img_td = document.createElement("td");
     let img = document.createElement("img");
+    img.className = "pic"
     img.src = image;
     img_td.append(img);
+    
 
     let name = document.createElement("td");
     name.innerText = title;

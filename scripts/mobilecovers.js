@@ -1,5 +1,7 @@
 import {navbar} from "../components/navbar.js"
 import {footerSection} from "../components/footer.js"
+import {loader} from "../components/loader.js"
+loader()
 
 let footerdiv = document.querySelector("#footer");
 footerdiv.innerHTML = footerSection ()

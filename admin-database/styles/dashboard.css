@@ -381,3 +381,9 @@ table tbody tr {
 .btn:hover {
   background-color: whitesmoke;
 }
+
+
+html {
+  transition: all 1s;
+
+}

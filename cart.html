@@ -87,10 +87,34 @@
         #logo{
             margin-left: 10%;
         }
+
+        #loader {
+    display: grid;
+place-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+   
+}
+
+
+#loader img{
+
+    /* width: 100px;
+    height: 70px; */
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    border-radius:0.5rem ;
+    box-shadow: 0 0 10px grey;
+}
     </style>
     
 </head>
 <body>
+    <div id="loader"> <img src="./images/loading.gif" alt=""></div>
+   
     <div id="navbar">
         <img id="logo" src="./images/logo3.png" alt="">
         <div id="sign_div">
@@ -185,4 +209,5 @@
     
 </body>
 </html>
-<script  src="./scripts/cart.js"></script>
+<script src="./scripts/cart.js"></script>
+<script type="module" src="./scripts/loader.js"></script>
