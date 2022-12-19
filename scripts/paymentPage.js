@@ -184,7 +184,7 @@ document.getElementById("card-pay-now-button").addEventListener("click" , functi
   var person = prompt("Please enter your OTP", "");
   if(person == "1234"){
     alert("We are processing your payment !");
-textTospeech(`@ Thank you for order ${name}`)
+textTospeech(` Thank you for order ${name}`)
 
 setTimeout(() => {
   window.location.href = "./orderPlaced.html";

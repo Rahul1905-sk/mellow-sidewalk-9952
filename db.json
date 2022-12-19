@@ -25238,5 +25238,37 @@
       "id": 11
     }
  
+  ],
+  "order_details": [
+    {
+      "fname": "Suresh",
+      "lname": "Kumar",
+      "number": "974851223",
+      "address": "Mumbai",
+      "price": "Rs7554",
+      "productName": [
+        "jacketsMens",
+        "Complete caps Set",
+        "Mini shirts for women",
+        "Womens jackets Elixir Ultime"
+      ],
+      "date": "12/15/2022, 3:24:58 PM",
+      "id": 1
+    },
+    {
+      "fname": "rahul",
+      "lname": "singh",
+      "number": "781215402",
+      "address": "M.P.",
+      "price": "Rs7554",
+      "productName": [
+        "jacketsMens",
+        "Complete caps Set",
+        "Mini shirts for women",
+        "Womens jackets Elixir Ultime"
+      ],
+      "date": "12/18/2022, 11:29:45 PM",
+      "id": 2
+    }
   ]
 }
