@@ -107,7 +107,23 @@ const appending=(data)=>{
 
 }
 appending(data);
-
+/*
+{
+    "fname": "Suresh",
+    "lname": "Kumar",
+    "number": "974851223",
+    "address": "Mumbai",
+    "price": "Rs7554",
+    "productName": [
+      "jacketsMens",
+      "Complete caps Set",
+      "Mini shirts for women",
+      "Womens jackets Elixir Ultime"
+    ],
+    "date": "12/15/2022, 3:24:58 PM",
+    "id": 1
+  },
+  */
 
 const removeproduct=(index)=>{
 
@@ -195,7 +211,25 @@ const Addaddress=()=>{
 
 
 document.getElementById("continue").onclick=()=>{
-    window.location.href="paymentpage.html";
+    let arr=[];
+    data.forEach((el)=>{
+        arr.push(el.title);
+        
+    })
+    let localaddress=JSON.parse(localStorage.getItem("address"));
+   let obj1={
+
+   fname:localaddress.name,
+   lname:"",
+   number:localaddress.mobile,
+   address:localaddress.city,
+   price:sum,
+   productName:arr
+   }
+   //console.log(obj1);
+   localStorage.setItem("final",JSON.stringify(obj1));
+
+   window.location.href="paymentpage.html";
 }
 
 document.getElementById("logo").onclick=()=>{
