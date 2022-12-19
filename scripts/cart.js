@@ -1,3 +1,4 @@
+
 let data=JSON.parse(localStorage.getItem("cart"))||[];
 
 let sign_email=localStorage.getItem("email");
@@ -220,13 +221,14 @@ document.getElementById("continue").onclick=()=>{
    let obj1={
 
    fname:localaddress.name,
-   lname:"",
+   lname:"Singh",
    number:localaddress.mobile,
    address:localaddress.city,
-   price:sum,
-   productName:arr
+   price:`Rs ${sum}`,
+   productName:arr,
+   date : new Date().toLocaleString()
    }
-   //console.log(obj1);
+   console.log(obj1);
    localStorage.setItem("final",JSON.stringify(obj1));
 
    window.location.href="paymentpage.html";
@@ -234,4 +236,25 @@ document.getElementById("continue").onclick=()=>{
 
 document.getElementById("logo").onclick=()=>{
     window.location.href="index.html";
+}
+
+
+
+let cartlength=JSON.parse(localStorage.getItem("cart")) || [];
+if (cartlength == undefined) {
+  cartlength = [];
+} 
+  document.getElementById("cart_no").innerText=cartlength.length;
+
+
+let username=localStorage.getItem("username");
+let useremail=localStorage.getItem("email");
+let usernum=localStorage.getItem("mobile");
+
+if(username!=null && useremail!=null && usernum!=null){
+  document.getElementById("profile").style.display="block";
+  document.getElementById("loginid").style.display="none";
+}else{
+  document.getElementById("profile").style.display="none";
+  document.getElementById("loginid").style.display="block";
 }

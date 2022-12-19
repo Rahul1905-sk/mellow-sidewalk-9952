@@ -20,8 +20,8 @@ document.getElementById("email").onclick=()=>{
    
 }
 
-let cartlength=JSON.parse(localStorage.getItem("cart"));
-document.getElementById("cart_no").innerText=cartlength.length;
+// let cartlength=JSON.parse(localStorage.getItem("cart"));
+// document.getElementById("cart_no").innerText=cartlength.length;
 
 const  Login=()=>{
     if(mobile.length==10){
@@ -45,3 +45,15 @@ const count=()=>{
 // const Emaillogin=()=>{
 //     window.location.href=("email.html");
 // }
+
+
+
+
+let cartlength=JSON.parse(localStorage.getItem("cart")) || [];
+if (cartlength == undefined) {
+  cartlength = [];
+} 
+  document.getElementById("cart_no").innerText=cartlength.length;
+
+
+  

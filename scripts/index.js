@@ -50,8 +50,12 @@ carosse2.innerHTML = carousel_aala2();
  let carosse3 = document.getElementById("caross3");
 carosse3.innerHTML = carousel_aala3();
 
-let cartlength=JSON.parse(localStorage.getItem("cart"));
-document.getElementById("cart_no").innerText=cartlength.length;
+let cartlength=JSON.parse(localStorage.getItem("cart")) || [];
+if (cartlength == undefined) {
+  cartlength = [];
+} 
+  document.getElementById("cart_no").innerText=cartlength.length;
+
 
 let username=localStorage.getItem("username");
 let useremail=localStorage.getItem("email");
@@ -314,3 +318,10 @@ sp_rightacc.addEventListener('click',()=>{
 });
 
 //new arrivals
+
+// data
+
+// async function displayData () {
+
+//     let res = await fetch ()
+// }

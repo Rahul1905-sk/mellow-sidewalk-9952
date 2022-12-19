@@ -20,7 +20,7 @@ function navbar()
     <div id="logo_menu">
    
         <li><a href="./index.html"><img id="be_cool" src="./images/logo3.png" alt="logo"></a></li>
-        <li><a href="#">MEN</a>
+        <li><a href="./mensjacket.html">MEN</a>
          <div id="logo_sub_menu1">
              <div id="sub_menu_item"><ul>
              <li><a href="#"><h5>TopWear</h5></a></li>
@@ -76,7 +76,7 @@ function navbar()
               
          </div>
         </li>
-        <li><a href="#">WOMEN</a>
+        <li><a href="./Womensjacket.html">WOMEN</a>
             <div id="logo_sub_menu2">
                 <div id="sub_menu_item"><ul>
                 <li><a href="#"><h5>TopWear</h5></a></li>
@@ -129,7 +129,7 @@ function navbar()
                </div>
               
             </div></li>
-        <li><a href="#">MOBILE COVER</a>
+        <li><a href="./mobilecovers.html">MOBILE COVER</a>
             <div id="logo_sub_menu3">
                 <div id="sub_menu_item"><ul>
                     <li><a href="#"><h2>POPULAR</h2></a></li>
@@ -196,7 +196,7 @@ function navbar()
       <a href="userdetail.html"><img id="profile" src="https://cdn-icons-png.flaticon.com/128/709/709579.png"></a>
       
      
-        <li><a href="cart.html"><span><i class="far fa-heart"></i></span></a></li>
+        <li><a href="cart.html"></a></li>
 
         <div > 
         <a href="./cart.html">
@@ -212,7 +212,12 @@ function navbar()
     </div>
     
 </div>
+
+
+
+
 `
+
 }
 
 export {navbar} ;

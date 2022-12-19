@@ -1,10 +1,12 @@
 import {navbar} from "../components/navbar.js";
+import {loader} from "../components/loader.js"
+loader()
 
 let nav=document.getElementById("navbar");
 nav.innerHTML=navbar();
 
-let cartlength=JSON.parse(localStorage.getItem("cart"));
-document.getElementById("cart_no").innerText=cartlength.length;
+// let cartlength=JSON.parse(localStorage.getItem("cart"));
+// document.getElementById("cart_no").innerText=cartlength.length;
 
 const load=()=>{
     let phone=localStorage.getItem("phone");
@@ -99,4 +101,11 @@ const getData=async()=>{
 
 }
 
+
+
+let cartlength=JSON.parse(localStorage.getItem("cart")) || [];
+if (cartlength == undefined) {
+  cartlength = [];
+} 
+  document.getElementById("cart_no").innerText=cartlength.length;
 

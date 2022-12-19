@@ -7,8 +7,6 @@ function textTospeech (text) {
     speechSynthesis.speak(utternance);
 }
 
-let cartlength=JSON.parse(localStorage.getItem("cart"));
-document.getElementById("cart_no").innerText=cartlength.length;
 
 var paymentDebitButton = document.getElementById("payment-debit-button-div");
 var paymentWalletButton = document.getElementById("payment-wallet-button-div");
@@ -179,12 +177,20 @@ localStorage.setItem("userkanaam", "anukul")
 
 
 document.getElementById("card-pay-now-button").addEventListener("click" , function(){
-  let name = localStorage.getItem("userkanaam")
+  // let name = localStorage.getItem("userkanaam")
   
   var person = prompt("Please enter your OTP", "");
   if(person == "1234"){
     alert("We are processing your payment !");
-textTospeech(` Thank you for order ${name}`)
+    textTospeech(` Thank you for order ${username}`)
+// let arrr = ;
+    localStorage.setItem("cart", null)
+    localStorage.setItem("address", null)
+    pushOrderDetails();
+    // let cartlength=JSON.parse(localStorage.getItem("cart"));
+    // document.getElementById("cart_no").innerText=cartlength.length;
+
+
 
 setTimeout(() => {
   window.location.href = "./orderPlaced.html";
@@ -228,3 +234,43 @@ function paymentP() {
   }
   
   paymentP()
+
+
+  
+let username=localStorage.getItem("username");
+let useremail=localStorage.getItem("email");
+let usernum=localStorage.getItem("mobile");
+
+// if(username!=null && useremail!=null && usernum!=null){
+//   document.getElementById("profile").style.display="block";
+//   document.getElementById("loginid").style.display="none";
+// }else{
+//   document.getElementById("profile").style.display="none";
+//   document.getElementById("loginid").style.display="block";
+// }
+
+
+
+
+let orderDetails = JSON.parse(localStorage.getItem("final"));
+
+async function pushOrderDetails () {
+
+    let res = await fetch (`http://localhost:3000/order_details`, {
+        method: "POST",
+        body: JSON.stringify(orderDetails),
+        headers : {
+            "Content-Type" : "application/json"
+        }
+    })
+}
+
+
+let email = localStorage.getItem("email");
+
+document.querySelector("#emailAPka").innerText = email;
+
+
+document.getElementById("logo").onclick=()=>{
+  window.location.href="index.html";
+}
