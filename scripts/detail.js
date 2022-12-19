@@ -28,12 +28,40 @@ const appendData = (data) => {
   var des = document.createElement("h3");
   des.innerText = data.title;
 
-  var pPrice = document.createElement("h1");
-  pPrice.innerText = data.price.current_price;
+  let div=document.createElement("div");
+  div.style.display="flex";
+  div.style.alignItems="center";
+  
 
+  var pPrice = document.createElement("h1");
+  pPrice.innerText ="₹ "+ data.price.current_price+" ";
+  pPrice.style.fontSize="20px";
+  pPrice.style.fontWeight="bold";
+  pPrice.style.marginTop="15px";
+
+
+  let del=document.createElement("del");
+  del.innerText=" ₹"+data.price.before_price;
+  del.style.color="grey";
+  del.style.marginLeft="10px"
+
+  let percent=document.createElement("p");
+  percent.innerText=data.price.savings_percent+"% OFF"
+  percent.style.color="#19bf63";
+  percent.style.fontSize="17px";
+  percent.style.fontWeight="bold";
+  percent.style.marginLeft="10px";
+
+  let taxes=document.createElement("p");
+  taxes.innerText="inclusive of all taxes";
+  taxes.style.fontSize="13px";
+  taxes.style.color="grey";
+  taxes.style.marginTop="-15px";
+
+div.append(pPrice,del,percent);
   var rating = document.createElement("h3");
   rating.innerText = "Reviews(" + data.review.rating + ")";
-  document.getElementById("full2").append(cName, pName, pPrice, des, rating);
+  document.getElementById("full2").append(cName, pName, div,taxes, des, rating);
 };
 appendData(data);
 const bag=document.getElementById("bag").addEventListener("click",()=>{
