@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <link rel="stylesheet" href="./styles/modal-popup.css" />
+    <title>BEcool Admin Dashboard</title>
+    <style>
+    
+       div, button{
+        border-color:  rgba(53, 47, 47, 0.374) !important;
+      }
+
+      #icons_div {
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+     #rhs img{
+        /* filter: invert(1) !important; */
+        filter: none !important;
+      }  
+
+    </style>
+  </head>
+  <body>
+    <div id="invertDiv"></div>
+    <div id="main_container">
+      <div id="lhs">
+        <div id="title_div">
+          <div id="logo">
+            <img style="width: 150px;" src="../images/logo3.png" alt="" />
+          </div>
+          <!-- <h4>BEcool</h4> -->
+        </div>
+        <div id="link_div">
+          <div id="products_div" class="link_item link_active">
+            <i class="fa-solid fa-tags"></i>
+            <p>Products</p>
+          </div>
+          <div id="orders_div" class="link_item">
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+            <p>Orders</p>
+          </div>
+          <div id="customers_div" class="link_item">
+            <i class="fa-solid fa-user"></i>
+            <p>Customers</p>
+          </div>
+        </div>
+      </div>
+      <div id="rhs">
+        <div id="navbar">
+          <!-- login icon -->
+          <div id="icons_div">🦉 </div>
+          <div id="admin_icon_div">
+            R
+            <div id="admin_details">
+              <div id="admin_email_div">
+                <i class="fa-regular fa-user"></i>
+                <p>Rahul Singh</p>
+              </div>
+              <div id="admin_logout_div">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>Logout</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="rhs_body">
+          <div id="products_page" class="page active">
+            <div class="header">
+              <h4>Products</h4>
+              <button class="btn add_product">New Product</button>
+              <div class="modal myModal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <select id="new_prod_category">
+                    <option value="mensjacket">Mens Jacket</option>
+                    <option value="menstrousers">Mens Trousers</option>
+                    <option value="womensshirt">Womens Shirt</option>
+                    <option value="womensjeans">Womens Jeans</option>
+                  </select>
+                  <input
+                    type="text"
+                    id="new_prod_name"
+                    placeholder="Add Product Name"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="new_prod_img"
+                    placeholder="Add Image Address"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="new_prod_price"
+                    placeholder="Add Product Price"
+                    required
+                  />
+                  <!-- <input
+                    type="text"
+                    id="new_prod_brandName"
+                    placeholder="Add Brand Name"
+                    required
+                  /> -->
+                  <input
+                    type="number"
+                    id="new_prod_quantity"
+                    placeholder="Add Quantity"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="new_prod_description"
+                    placeholder="Add Description"
+                    required
+                  />
+                  <button id="add_new_product">Add Product</button>
+                </div>
+              </div>
+            </div>
+            <div class="action_div">
+              <div>
+                <button class="btn cat_btn link_active" id="skin_btn">
+                  Mens Jacket
+                </button>
+                <button class="btn cat_btn" id="frag_btn">Mens Trousers</button>
+                <button class="btn cat_btn" id="hair_btn">Womens Shirt</button>
+                <button class="btn cat_btn" id="lip_btn">Womens Jeans</button>
+                <button class="btn cat_btn" id="brush_btn">Mobile Covers</button>
+              </div>
+              <div>
+                <select id="filter_Prod" class="btn">
+                  <option value="">Filter By</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+                  <option value="999">Less Than 999</option>
+                  <option value="1499">Less Than 1499</option>
+                  <option value="1999">More Than 1999</option>
+                </select>
+                <select id="sort_Prod" class="btn">
+                  <option value="">Sort By</option>
+                  <option value="asc">Low To High</option>
+                  <option value="desc">High To Low</option>
+                </select>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Inventory</th>
+                  <th>Price</th>
+                  <th>Status</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody id="product_tbody">
+                <!-- items row comes here -->
+              </tbody>
+            </table>
+          </div>
+
+          <div id="orders_page" class="page">
+            <!-- *********************************** -->
+            <h4>Orders</h4>
+            <div class="action_div">
+              <div></div>
+              <div>
+                <!-- <select id="sort_cus" class="btn">
+                  <option value="">Sort By</option>
+                  <option value="asc">A-Z</option>
+                  <option value="desc">Z-A</option>
+                </select> -->
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Number</th>
+                  <th>Items</th>
+                  <th>Address</th>
+                  <th>Total Price</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody id="orders_tbody">
+                <!-- items row comes here -->
+              </tbody>
+            </table>
+          </div>
+
+          <div id="customers_page" class="page">
+            <h4>Customers</h4>
+            <!-- ******************************* -->
+            <div class="action_div">
+              <div>
+                <input
+                  type="text"
+                  id="search_user"
+                  class="btn"
+                  placeholder="Search User"
+                />
+                <button id="search_user_btn" class="btn">search</button>
+              </div>
+              <div>
+                <!-- <select id="sort_cus" class="btn">
+                  <option value="">Sort By</option>
+                  <option value="a2z">A-Z</option>
+                  <option value="z2a">Z-A</option>
+                </select> -->
+              </div>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Full Name</th>
+                  <th>Mobile No.</th>
+                  <th>Email</th>
+                  <th>Password</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody id="customer_tbody">
+                <!-- items row comes here -->
+              </tbody>
+            </table>
+            <!-- ******************************* -->
+          </div>
+
+      
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module" src="./scripts/dashboard.js"></script>
+<script type="module" src="./scripts/modal-popup.js"></script>
+<script type="module" src="./scripts/customer.js"></script>
+<script type="module" src="./scripts/orders.js"></script>
+<script src="./scripts/darkMode.js"></script>
+
