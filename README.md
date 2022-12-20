@@ -36,10 +36,10 @@ Order Details of Customer
 Implemented all the above said functionalities using LocalStorage, and enhanced dynamic flow of all data
 
 ## Tech-Stack
-HTML
-CSS
-JS DOM
-LocalStorage
+HTML,
+CSS,
+JS DOM,
+LocalStorage,
 Local Backend Json-Server
 
 ## Team Members
