@@ -184,9 +184,9 @@ document.getElementById("card-pay-now-button").addEventListener("click" , functi
     alert("We are processing your payment !");
     textTospeech(` Thank you for order ${username}`)
 // let arrr = ;
+pushOrderDetails();
     localStorage.setItem("cart", null)
     localStorage.setItem("address", null)
-    pushOrderDetails();
     // let cartlength=JSON.parse(localStorage.getItem("cart"));
     // document.getElementById("cart_no").innerText=cartlength.length;
 
