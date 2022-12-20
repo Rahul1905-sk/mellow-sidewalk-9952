@@ -13,8 +13,8 @@
       "status": true,
       "image": "https://m.media-amazon.com/images/I/61eMJalktNL._AC_UL320_.jpg",
       "price": {
-        "current_price": 1000,
-        "before_price": 2000,
+        "current_price": 899,
+        "before_price": 1899,
         "savings_amount": 1000
       },
       "review": {
@@ -25227,6 +25227,20 @@
       "email": "sandeep@gmail.com",
       "pass": "123456",
       "id": 9
+    },
+    {
+      "name": "karan",
+      "mobile": "8770182248",
+      "email": "karan@gmail.com",
+      "pass": "123456",
+      "id": 10
+    },
+    {
+      "name": "lalit",
+      "mobile": "8770182248",
+      "email": "lalit@gmail.com",
+      "pass": "123456",
+      "id": 11
     }
   ],
   "order_details": [
@@ -25271,6 +25285,18 @@
       ],
       "date": "12/19/2022, 3:03:39 PM",
       "id": 3
+    },
+    {
+      "fname": "lalit",
+      "lname": "Singh",
+      "number": "8770182248",
+      "address": "delhi",
+      "price": "Rs 3499",
+      "productName": [
+        "Fanideaz Men’s Black Full Sleeve Diamond Cut Bomber Jackets for Men"
+      ],
+      "date": "12/20/2022, 12:29:18 PM",
+      "id": 4
     }
   ]
 }
