@@ -11,6 +11,7 @@ HTML
 CSS
 JS DOM
 LocalStorage
+Local Backend Json-Server
 
 ## Libraries used
 Font awesome
@@ -39,6 +40,7 @@ HTML
 CSS
 JS DOM
 LocalStorage
+Local Backend Json-Server
 
 ## Team Members
 <ul>
