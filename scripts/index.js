@@ -52,6 +52,8 @@ carosse3.innerHTML = carousel_aala3();
 
 let cartlength=JSON.parse(localStorage.getItem("cart"));
 document.getElementById("cart_no").innerText=cartlength.length;
+document.getElementById("cart_no").innerText=0;
+
 
 let username=localStorage.getItem("username");
 let useremail=localStorage.getItem("email");

@@ -72,3 +72,7 @@ const userlogin=async()=>{
         document.getElementById("login_btn").style.backgroundColor="#989898";
     }
   }
+
+  document.getElementById("forgot").onclick=()=>{
+    window.prompt("Enter new password");
+  }
