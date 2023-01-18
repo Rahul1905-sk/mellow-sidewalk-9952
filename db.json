@@ -3,7 +3,7 @@
     {
       "id": 1,
       "MailId": "rahul1905.sk@gmail.com",
-      "Pass": "1111"
+
     }
   ],
   "mensjacket": [
@@ -13,8 +13,7 @@
       "status": true,
       "image": "https://m.media-amazon.com/images/I/61eMJalktNL._AC_UL320_.jpg",
       "price": {
-        "current_price": 899,
-        "before_price": 1899,
+
         "savings_amount": 1000
       },
       "review": {
@@ -25166,39 +25165,12 @@
   ],
   "User": [
     {
-      "name": "Rahul",
-      "mobile": "8770182248",
-      "email": "rahul1905.sk@gmail.com",
-      "pass": "123456",
-      "id": 1
-    },
-    {
-      "name": "chotu",
-      "mobile": "1234567890",
-      "email": "chotu@gmail.com",
-      "pass": "1234qwe",
-      "id": 2
-    },
-    {
+
       "name": "Nitish Kumar",
       "mobile": "9693814331",
       "email": "nitishkumar50805@gmail.com",
       "pass": "123456",
       "id": 3
-    },
-    {
-      "name": "nitish",
-      "mobile": "9693814331",
-      "email": "mn@email.com",
-      "pass": "987067",
-      "id": 4
-    },
-    {
-      "name": "mnhoiu",
-      "mobile": "9693814331",
-      "email": "nit@gmail.com",
-      "pass": "nitisss",
-      "id": 5
     },
     {
       "name": "Nitish Kumar",
