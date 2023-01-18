@@ -3,7 +3,7 @@
     {
       "id": 1,
       "MailId": "rahul1905.sk@gmail.com",
-      "Pass": "123456"
+
     }
   ],
   "mensjacket": [
@@ -13,19 +13,19 @@
       "status": true,
       "image": "https://m.media-amazon.com/images/I/61eMJalktNL._AC_UL320_.jpg",
       "price": {
-        "current_price": 795,
-        "before_price": 1795,
+
         "savings_amount": 1000
       },
       "review": {
         "total_reviews": 6150,
         "rating": 3.4
-      }
+      },
+      "quantity": 100
     },
     {
       "title": "Ben Martin Men's Nylon Full Sleeve Bomber Jacket",
       "id": 1671106002774.4326,
-      "status": true,
+      "status": false,
       "image": "https://m.media-amazon.com/images/I/61mqx2-CJdL._AC_UL320_.jpg",
       "price": {
         "discounted": true,
@@ -61,7 +61,7 @@
     {
       "title": "AWG ALL WEATHER GEAR Mens Cotton Casual Jacket",
       "id": 1671106002487.8418,
-      "status": true,
+      "status": false,
       "image": "https://m.media-amazon.com/images/I/518O7o2rEXL._AC_UL320_.jpg",
       "price": {
         "discounted": true,
@@ -25165,6 +25165,7 @@
   ],
   "User": [
     {
+
       "name": "Nitish Kumar",
       "mobile": "9693814331",
       "email": "nitishkumar50805@gmail.com",
@@ -25193,24 +25194,24 @@
       "id": 8
     },
     {
-      "name": "chotu",
-      "mobile": "1234567890",
-      "email": "chotu@gmail.com",
-      "pass": "1234qwe",
+      "name": "Sandeep Maurya",
+      "mobile": "9988885301",
+      "email": "sandeep@gmail.com",
+      "pass": "123456",
       "id": 9
     },
     {
-      "name": "erf",
-      "mobile": "1234567890",
-      "email": "edsr",
-      "pass": "gdffgsdfg",
+      "name": "karan",
+      "mobile": "8770182248",
+      "email": "karan@gmail.com",
+      "pass": "123456",
       "id": 10
     },
     {
-      "name": "",
-      "mobile": "9974295951",
-      "email": "",
-      "pass": "fdgdfgdg",
+      "name": "lalit",
+      "mobile": "8770182248",
+      "email": "lalit@gmail.com",
+      "pass": "123456",
       "id": 11
     }
   ],
@@ -25244,6 +25245,30 @@
       ],
       "date": "12/18/2022, 11:29:45 PM",
       "id": 2
+    },
+    {
+      "fname": "sandeep Singh",
+      "lname": "Singh",
+      "number": "892i347",
+      "address": "HARAYANA",
+      "price": "Rs 1100",
+      "productName": [
+        "Ben Martin Men's Quilted Bomber Jacket"
+      ],
+      "date": "12/19/2022, 3:03:39 PM",
+      "id": 3
+    },
+    {
+      "fname": "lalit",
+      "lname": "Singh",
+      "number": "8770182248",
+      "address": "delhi",
+      "price": "Rs 3499",
+      "productName": [
+        "Fanideaz Men’s Black Full Sleeve Diamond Cut Bomber Jackets for Men"
+      ],
+      "date": "12/20/2022, 12:29:18 PM",
+      "id": 4
     }
   ]
 }

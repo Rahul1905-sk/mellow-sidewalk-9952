@@ -1,6 +1,8 @@
 
 import {navbar} from "../components/navbar.js"
 import {footerSection} from "../components/footer.js"
+import {loader} from "../components/loader.js"
+loader()
 
 let footerdiv = document.querySelector("#footer");
 footerdiv.innerHTML = footerSection ()
@@ -8,8 +10,8 @@ footerdiv.innerHTML = footerSection ()
 let navbardiv = document.querySelector("#navbar");
 navbardiv.innerHTML = navbar();
 
-let cartlength=JSON.parse(localStorage.getItem("cart"));
-document.getElementById("cart_no").innerText=cartlength.length;
+// let cartlength=JSON.parse(localStorage.getItem("cart"));
+// document.getElementById("cart_no").innerText=cartlength.length;
 
 let data = JSON.parse(localStorage.getItem("wind"));
 
@@ -70,11 +72,48 @@ const bag=document.getElementById("bag").addEventListener("click",()=>{
 })
 var bagarr=JSON.parse(localStorage.getItem("cart"))||[]
 
+
+
 function addbag()
 {
-    
-    
-    bagarr.push(data)
-    localStorage.setItem("cart",JSON.stringify(bagarr))
+  let checkLogin =  localStorage.getItem("email") || null;
+  // function add() {
+    if (checkLogin != null) {
+      bagarr.push(data)
+      localStorage.setItem("cart", JSON.stringify(bagarr));
+      // showCount();
+      alert("Added to Cart");
 
+      window.location.reload();
+    } else {
+      alert("Login To your Account First");
+    }
+  // }
+
+
+  // bagarr.push(data)
+  // localStorage.setItem("cart",JSON.stringify(bagarr))
+  // alert("Product added to cart")
+
+}
+
+
+
+let cartlength=JSON.parse(localStorage.getItem("cart")) || [];
+if (cartlength == undefined) {
+  cartlength = [];
+} 
+  document.getElementById("cart_no").innerText=cartlength.length;
+
+
+let username=localStorage.getItem("username");
+let useremail=localStorage.getItem("email");
+let usernum=localStorage.getItem("mobile");
+
+if(username!=null && useremail!=null && usernum!=null){
+  document.getElementById("profile").style.display="block";
+  document.getElementById("loginid").style.display="none";
+}else{
+  document.getElementById("profile").style.display="none";
+  document.getElementById("loginid").style.display="block";
 }

@@ -15,8 +15,6 @@ document.getElementById("pass").oninput=()=>{
     check();
 }
 
-let cartlength=JSON.parse(localStorage.getItem("cart"));
-document.getElementById("cart_no").innerText=cartlength.length;
 
 const userlogin=async()=>{
   
@@ -73,6 +71,3 @@ const userlogin=async()=>{
     }
   }
 
-  document.getElementById("forgot").onclick=()=>{
-    window.prompt("Enter new password");
-  }

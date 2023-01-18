@@ -1,6 +1,8 @@
 
 import {navbar} from "../components/navbar.js"
 import {footerSection} from "../components/footer.js"
+import {loader} from "../components/loader.js"
+loader()
 
 let footerdiv = document.querySelector("#footer");
 footerdiv.innerHTML = footerSection ()
@@ -50,8 +52,8 @@ const getData = async () => {
 
 
 
-        let cartlength=JSON.parse(localStorage.getItem("cart"));
-        document.getElementById("cart_no").innerText=cartlength.length;
+        // let cartlength=JSON.parse(localStorage.getItem("cart"));
+        // document.getElementById("cart_no").innerText=cartlength.length;
     
   
         var rating = document.createElement("p");
@@ -127,3 +129,24 @@ function getdetails(el) {
     localStorage.setItem("wind", JSON.stringify(el));
     window.location.href = "detail.html";
   }
+
+
+  
+let cartlength=JSON.parse(localStorage.getItem("cart")) || [];
+if (cartlength == undefined) {
+  cartlength = [];
+} 
+  document.getElementById("cart_no").innerText=cartlength.length;
+
+
+let username=localStorage.getItem("username");
+let useremail=localStorage.getItem("email");
+let usernum=localStorage.getItem("mobile");
+
+if(username!=null && useremail!=null && usernum!=null){
+  document.getElementById("profile").style.display="block";
+  document.getElementById("loginid").style.display="none";
+}else{
+  document.getElementById("profile").style.display="none";
+  document.getElementById("loginid").style.display="block";
+}

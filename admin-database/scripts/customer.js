@@ -1,3 +1,6 @@
+
+// let url = http://localhost:3000/User;
+
 const getCustomerData = async () => {
   let res = await fetch(`http://localhost:3000/User`);
   let data = await res.json();
