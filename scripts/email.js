@@ -15,8 +15,6 @@ document.getElementById("pass").oninput=()=>{
     check();
 }
 
-// let cartlength=JSON.parse(localStorage.getItem("cart"));
-// document.getElementById("cart_no").innerText=cartlength.length;
 
 const userlogin=async()=>{
   
@@ -73,22 +71,3 @@ const userlogin=async()=>{
     }
   }
 
-  
-let cartlength=JSON.parse(localStorage.getItem("cart")) || [];
-if (cartlength == undefined) {
-  cartlength = [];
-} 
-  document.getElementById("cart_no").innerText=cartlength.length;
-
-
-let username=localStorage.getItem("username");
-let useremail=localStorage.getItem("email");
-let usernum=localStorage.getItem("mobile");
-
-if(username!=null && useremail!=null && usernum!=null){
-  document.getElementById("profile").style.display="block";
-  document.getElementById("loginid").style.display="none";
-}else{
-  document.getElementById("profile").style.display="none";
-  document.getElementById("loginid").style.display="block";
-}
