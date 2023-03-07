@@ -1,8 +1,12 @@
 function invert() {
-    let css = 'html {-webkit-filter: invert(100%);' +
-      '-moz-filter: invert(100%);' + 
-      '-o-filter: invert(100%);' + 
-      '-ms-filter: invert(100%); }',
+    let css = `*{
+      background-color: black !important;  
+      color: white !important; 
+    }
+    
+    * button {
+      border: 1px solid white !important;
+    }`,
       head = document.getElementsByTagName('head')[0],
       style = document.createElement('style')
   
@@ -11,7 +15,14 @@ function invert() {
     } else {
       window.counter++
       if (window.counter % 2 == 0) {
-        css ='html {-webkit-filter: invert(0%); -moz-filter: invert(0%); -o-filter: invert(0%); -ms-filter: invert(0%); }'
+        css =`*{
+          background-color: white !important;  
+          color: black !important; 
+        }
+        
+        * button {
+          border: 1px solid black !important;
+        }`
       }
     }
   

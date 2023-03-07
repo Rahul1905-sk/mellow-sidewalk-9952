@@ -24,7 +24,7 @@ const userlogin=async()=>{
     }
 
     try{
-      let res=await fetch(`http://localhost:3000/User`,{
+      let res=await fetch(`https://mock-server-wxg2.onrender.com/User`,{
       method:"GET",
       headers:{
         "Content-Type":"application/json",

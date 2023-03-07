@@ -12,7 +12,7 @@ navbardiv.innerHTML = navbar();
 
 
 
-let url="http://localhost:3000/mensjacket"
+let url="https://mock-server-wxg2.onrender.com/mensjacket"
 
 
 

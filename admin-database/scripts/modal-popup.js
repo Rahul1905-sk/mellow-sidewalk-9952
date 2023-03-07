@@ -47,7 +47,7 @@ addNewProducts.onclick = async () => {
 
   };
 
-  let res = await fetch(`http://localhost:3000/${category}`, {
+  let res = await fetch(`https://mock-server-wxg2.onrender.com/${category}`, {
     method: "POST",
     body: JSON.stringify(dataToSend),
     headers: {

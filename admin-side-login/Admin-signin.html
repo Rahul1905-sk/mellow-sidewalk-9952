@@ -16,13 +16,15 @@
   <body>
     <div id="Login-body">
       <div id="Admin-Logo">
-        <img src="../images/logo3.png" alt="" />
+        <!-- <a href="./index.html"><img src="../images/logo3.png" alt="logo"></a> -->
+      
+        <img src="../images/logo3.png" id="becool_logo" alt="" />
       </div>
       <h1>Welcome back!</h1>
       <p>It's great to see you</p>
       <p id="secPtag">Log in to your account below</p>
       <div id="Main-Login">
-        <input type="email" id="email" placeholder="Email..." required />
+        <input type="email" value="rahul1905.sk@gmail.com" id="email" placeholder="Email..." required />
         <input
           type="password"
           id="password"
@@ -34,5 +36,11 @@
       </div>
     </div>
   </body>
+  <script> 
+password.onclick=()=>{
+  alert("Default password: 1111")
+}
+becool_logo.onclick = ()=> location.assign('../index.html')
+  </script>
 </html>
 <script src="./script/Admin-signin.js"></script>

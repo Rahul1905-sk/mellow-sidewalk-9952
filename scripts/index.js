@@ -1,20 +1,20 @@
 
 // Resources
-  // http://localhost:3000/mensjacket
-  // http://localhost:3000/mensshirt 
-  // http://localhost:3000/menst-shirt
-  // http://localhost:3000/mensjeans
-  // http://localhost:3000/menstrousers
-  // http://localhost:3000/womensjacket
-  // http://localhost:3000/womensshirt
-  // http://localhost:3000/womenstop
-  // http://localhost:3000/womensjeans
-  // http://localhost:3000/womenstrousers
-  // http://localhost:3000/caps
-  // http://localhost:3000/sliders
-  // http://localhost:3000/mobilecovers
-  // http://localhost:3000/mensshoes
-  // http://localhost:3000/womensshoes
+  // https://mock-server-wxg2.onrender.com/mensjacket
+  // https://mock-server-wxg2.onrender.com/mensshirt 
+  // https://mock-server-wxg2.onrender.com/menst-shirt
+  // https://mock-server-wxg2.onrender.com/mensjeans
+  // https://mock-server-wxg2.onrender.com/menstrousers
+  // https://mock-server-wxg2.onrender.com/womensjacket
+  // https://mock-server-wxg2.onrender.com/womensshirt
+  // https://mock-server-wxg2.onrender.com/womenstop
+  // https://mock-server-wxg2.onrender.com/womensjeans
+  // https://mock-server-wxg2.onrender.com/womenstrousers
+  // https://mock-server-wxg2.onrender.com/caps
+  // https://mock-server-wxg2.onrender.com/sliders
+  // https://mock-server-wxg2.onrender.com/mobilecovers
+  // https://mock-server-wxg2.onrender.com/mensshoes
+  // https://mock-server-wxg2.onrender.com/womensshoes
 
 
 
@@ -63,18 +63,18 @@ if(username!=null && useremail!=null && usernum!=null){
   document.getElementById("loginid").style.display="block";
 }
 
- let url_a="http://localhost:3000/mensjacket";
-  let url1 ="http://localhost:3000/menst-shirt";
-  let url2 ="http://localhost:3000/mensshirt";
+ let url_a="https://mock-server-wxg2.onrender.com/mensjacket";
+  let url1 ="https://mock-server-wxg2.onrender.com/menst-shirt";
+  let url2 ="https://mock-server-wxg2.onrender.com/mensshirt";
 //////////////////////////////////////////////////////////////////////////////////////////
-let url_wa="http://localhost:3000/womensjeans";
-  let url3 = "http://localhost:3000/womenstop";
-  let url4 ="http://localhost:3000/womensshirt";
+let url_wa="https://mock-server-wxg2.onrender.com/womensjeans";
+  let url3 = "https://mock-server-wxg2.onrender.com/womenstop";
+  let url4 ="https://mock-server-wxg2.onrender.com/womensshirt";
 //////////////////////////////////////////////////////////////////////////////////////////
-let url5="http://localhost:3000/mobilecovers";
+let url5="https://mock-server-wxg2.onrender.com/mobilecovers";
 
 //////////////////////////////////////////////////////////////////////////////////////////
-let url6="http://localhost:3000/womensjacket";
+let url6="https://mock-server-wxg2.onrender.com/womensjacket";
 
 //////////////////////////////////////////////////////////////////////////////////////////
 let m_arr=[];

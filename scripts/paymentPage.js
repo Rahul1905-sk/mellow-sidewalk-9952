@@ -256,7 +256,7 @@ let orderDetails = JSON.parse(localStorage.getItem("final"));
 
 async function pushOrderDetails () {
 
-    let res = await fetch (`http://localhost:3000/order_details`, {
+    let res = await fetch (`https://mock-server-wxg2.onrender.com/order_details`, {
         method: "POST",
         body: JSON.stringify(orderDetails),
         headers : {

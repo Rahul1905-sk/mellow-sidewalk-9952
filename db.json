@@ -12,9 +12,13 @@
       "id": 1671106002158.3962,
       "status": true,
       "image": "https://m.media-amazon.com/images/I/61eMJalktNL._AC_UL320_.jpg",
-      "price": {
-
-        "savings_amount": 1000
+       "price": {
+        "discounted": true,
+        "current_price": 849,
+        "currency": "INR",
+        "before_price": 3499,
+        "savings_amount": 2650,
+        "savings_percent": 75.74
       },
       "review": {
         "total_reviews": 6150,
@@ -25,7 +29,7 @@
     {
       "title": "Ben Martin Men's Nylon Full Sleeve Bomber Jacket",
       "id": 1671106002774.4326,
-      "status": false,
+      "status": true,
       "image": "https://m.media-amazon.com/images/I/61mqx2-CJdL._AC_UL320_.jpg",
       "price": {
         "discounted": true,
@@ -38,7 +42,8 @@
       "review": {
         "total_reviews": 330,
         "rating": 3.9
-      }
+      },
+      "quantity": 40
     },
     {
       "title": "Fanideaz Men’s Black Full Sleeve Diamond Cut Bomber Jackets for Men",
@@ -56,7 +61,8 @@
       "review": {
         "total_reviews": 47,
         "rating": 3.5
-      }
+      },
+      "quantity": 1
     },
     {
       "title": "AWG ALL WEATHER GEAR Mens Cotton Casual Jacket",
@@ -74,7 +80,8 @@
       "review": {
         "total_reviews": 826,
         "rating": 3.8
-      }
+      },
+      "quantity": 10
     },
     {
       "title": "Allen Solly Men's Jacket",
@@ -3345,20 +3352,18 @@
     {
       "title": "Amazon Brand - Symbol Men's Straight Casual Trousers",
       "id": 1671106370676.968,
-      "status": true,
+      "status": false,
       "image": "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/718kU7VISWL._AC_UL320_.jpg",
       "price": {
-        "discounted": true,
-        "current_price": 649,
-        "currency": "INR",
-        "before_price": 1299,
-        "savings_amount": 650,
-        "savings_percent": 50.04
+        "current_price": 1000,
+        "before_price": 2000,
+        "savings_amount": 1000
       },
       "review": {
         "total_reviews": 14044,
         "rating": 3.6
-      }
+      },
+      "quantity": 20
     },
     {
       "title": "McHenry Men's Solid Formal Regular Fit Wrinkle Free PolyViscose Trousers",
@@ -10165,7 +10170,7 @@
     {
       "title": "WOW IMAGINE Shock Proof Flip Cover Back Case Cover for 1+ OnePlus Nord CE 2 5G (Flexible | Leather Finish | Card Pockets W...",
       "id": 1671107955092.1196,
-      "status": true,
+      "status": false,
       "image": "https://m.media-amazon.com/images/I/71pqYU0CmiL._AC_UY218_.jpg",
       "price": {
         "discounted": true,
@@ -25165,14 +25170,6 @@
   ],
   "User": [
     {
-
-      "name": "Nitish Kumar",
-      "mobile": "9693814331",
-      "email": "nitishkumar50805@gmail.com",
-      "pass": "123456",
-      "id": 3
-    },
-    {
       "name": "Nitish Kumar",
       "mobile": "9693814331",
       "email": "masai@gmail.com",
@@ -25194,25 +25191,18 @@
       "id": 8
     },
     {
-      "name": "Sandeep Maurya",
-      "mobile": "9988885301",
-      "email": "sandeep@gmail.com",
+      "name": "Praveen",
+      "mobile": "8770182248",
+      "email": "rahul1905.sk@gmail.com",
       "pass": "123456",
       "id": 9
     },
     {
-      "name": "karan",
+      "name": "Harsh",
       "mobile": "8770182248",
-      "email": "karan@gmail.com",
+      "email": "harsh@gmail.com",
       "pass": "123456",
       "id": 10
-    },
-    {
-      "name": "lalit",
-      "mobile": "8770182248",
-      "email": "lalit@gmail.com",
-      "pass": "123456",
-      "id": 11
     }
   ],
   "order_details": [
@@ -25247,7 +25237,7 @@
       "id": 2
     },
     {
-      "fname": "sandeep Singh",
+      "fname": "sandeep",
       "lname": "Singh",
       "number": "892i347",
       "address": "HARAYANA",
@@ -25260,8 +25250,8 @@
     },
     {
       "fname": "lalit",
-      "lname": "Singh",
-      "number": "8770182248",
+      "lname": "shukla",
+      "number": "8712489248",
       "address": "delhi",
       "price": "Rs 3499",
       "productName": [
@@ -25269,6 +25259,56 @@
       ],
       "date": "12/20/2022, 12:29:18 PM",
       "id": 4
+    },
+    {
+      "fname": "rahul",
+      "lname": "Singh",
+      "number": "8964582248`",
+      "address": "gwalior",
+      "price": "Rs 3499",
+      "productName": [
+        "Fanideaz Men’s Black Full Sleeve Diamond Cut Bomber Jackets for Men"
+      ],
+      "date": "12/20/2022, 1:45:04 PM",
+      "id": 5
+    },
+    {
+      "fname": "Praveen",
+      "lname": "sharma",
+      "number": "8684522248",
+      "address": "gwalior",
+      "price": "Rs 5498",
+      "productName": [
+        "Fanideaz Men’s Black Full Sleeve Diamond Cut Bomber Jackets for Men",
+        "Sponsored Ad - itshe Premium Polyester Casual Women's Shirt"
+      ],
+      "date": "12/26/2022, 6:13:48 PM",
+      "id": 6
+    },
+    {
+      "fname": "Praveen",
+      "lname": "Singh",
+      "number": "8770182248",
+      "address": "Goa",
+      "price": "Rs 3998",
+      "productName": [
+        "VROJASS Full Sleeve Solid Men's Sleeve Combination Bomper Jacket",
+        "KOTTY Womens Solid Polyester Blend Cherry Maroon Trousers"
+      ],
+      "date": "12/26/2022, 8:57:13 PM",
+      "id": 7
+    },
+    {
+      "fname": "",
+      "lname": "Singh",
+      "number": "",
+      "address": "",
+      "price": "Rs 2199",
+      "productName": [
+        "Qube By Fort Collins Men's Bomber Jacket"
+      ],
+      "date": "12/26/2022, 9:01:09 PM",
+      "id": 8
     }
   ]
 }
