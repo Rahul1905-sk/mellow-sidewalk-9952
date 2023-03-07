@@ -53,7 +53,7 @@ const getData=async()=>{
     email:document.getElementById("email").value,
     pass:document.getElementById("pass").value,
     }
-    let get=await fetch(`http://localhost:3000/User`,{
+    let get=await fetch(`https://mock-server-wxg2.onrender.com/User`,{
             method:"GET",
             headers:{
                 "Content-Type":"application/json",
@@ -73,7 +73,7 @@ const getData=async()=>{
     })
     if(flag==true){
         if( obj.pass.length>=6){
-            let res=await fetch(`http://localhost:3000/User`,{
+            let res=await fetch(`https://mock-server-wxg2.onrender.com/User`,{
                 method:"POST",
                 body:JSON.stringify(obj),
                 headers:{

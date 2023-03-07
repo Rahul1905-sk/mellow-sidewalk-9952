@@ -357,6 +357,7 @@ border: 0px solid yellow;
   height: 200px;
 width: 80%;
 border: 0.5px dashed gray;
+object-fit: contain;
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -372,6 +373,19 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
    margin: 30px 0px 30px 50px;
    border: 0px solid red;
 }
+
+#wTshirt_pro1 div h4{
+  font-size: 16px;
+}
+#Tshirt_pro1 div h4{
+  font-size: 16px;
+}
+
+#new_m div {
+  color: rgba(92, 85, 85, 0.963);
+}
+
+
 .box8>div{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -393,6 +407,7 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding-top:10px;
   height: 200px;
+  object-fit: contain;
   width: 100%;
  
 }

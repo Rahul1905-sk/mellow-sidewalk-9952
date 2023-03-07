@@ -54,9 +54,10 @@ const slider2=()=>{
     });
     var name = document.createElement("h5");
     name.innerText = elem.title;
+    
 
     var Price = document.createElement("h5");
-    Price.innerText = `Price:${elem.price.current_price}`;
+    Price.innerText = `₹ ${elem.price.current_price}`;
 
     var rate = document.createElement("h5");
     rate.innerText =`Rating: ${elem.review.rating}`;
@@ -149,7 +150,7 @@ const slider2=()=>{
           name.innerText = elem.title;
     
           var Price = document.createElement("h5");
-          Price.innerText = `Price:${elem.price.current_price}`;
+          Price.innerText = `₹ ${elem.price.current_price}`;
     
           div.append(image,Price);
           document.querySelector("#wbs_pro1").append(div);
@@ -174,7 +175,7 @@ const slider2=()=>{
           name.innerText = elem.title;
 
           var Price = document.createElement("h4");
-          Price.innerText = `Price:${elem.price.current_price}`;
+          Price.innerText = `₹ ${elem.price.current_price}`;
 
           var rate = document.createElement("h4");
           rate.innerText =`Rating: ${elem.review.rating}`;

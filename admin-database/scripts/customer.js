@@ -1,8 +1,8 @@
 
-// let url = http://localhost:3000/User;
+// let url = https://mock-server-wxg2.onrender.com/User;
 
 const getCustomerData = async () => {
-  let res = await fetch(`http://localhost:3000/User`);
+  let res = await fetch(`https://mock-server-wxg2.onrender.com/User`);
   let data = await res.json();
   console.log(data);
   appendCustomerData(data);
@@ -52,7 +52,7 @@ searchBtn.onclick = () => {
 
 const search_user_data = async (d) => {
   // d = /d/i;
-  let res = await fetch(`http://localhost:3000/User`);
+  let res = await fetch(`https://mock-server-wxg2.onrender.com/User`);
   let data = await res.json();
   data = data.filter(({ name }) => {
     return name.includes(d);
@@ -63,7 +63,7 @@ const search_user_data = async (d) => {
 //delete User Details
 
 const delete_user_data = async (id) => {
-  let res = await fetch(`http://localhost:3000/User/${id}`, {
+  let res = await fetch(`https://mock-server-wxg2.onrender.com/User/${id}`, {
     method: "DELETE",
   });
 };

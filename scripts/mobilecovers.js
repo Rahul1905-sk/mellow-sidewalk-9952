@@ -12,7 +12,7 @@ navbardiv.innerHTML = navbar();
 let cartlength=JSON.parse(localStorage.getItem("cart"));
 document.getElementById("cart_no").innerText=cartlength.length;
 
-let url="http://localhost:3000/mobilecovers"
+let url="https://mock-server-wxg2.onrender.com/mobilecovers"
 
 
 
