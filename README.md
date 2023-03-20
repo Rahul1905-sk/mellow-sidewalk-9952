@@ -2,6 +2,10 @@
 
 https://github.com/Rahul1905-sk/mellow-sidewalk-9952
 
+## Deployed Link
+https://mellow-sidewalk-9952.vercel.app/
+
+
 ### Bewakoof_Clone
 
 Bewakoof.com is an E-Commerce website, where  could buy a varities of clothes of different category. This is the Clone of Bewakoof.com which was given by Masai school during the unit-3 curriculm. We are 4 members in the project team Rahul, Gauri, Nitish, and Anukul. We had taken the challenge to complete the project in 5days and successfully completed in in a deadline time..
