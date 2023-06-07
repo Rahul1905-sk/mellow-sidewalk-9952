@@ -1,3 +1,3 @@
-// let url = https://mock-server-wxg2.onrender.com/User
+// let url = https://glorious-robe-calf.cyclic.app/User
 
-export let url = `https://mock-server-wxg2.onrender.com/User`
+export let url = `https://glorious-robe-calf.cyclic.app/User`

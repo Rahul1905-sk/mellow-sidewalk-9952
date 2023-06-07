@@ -26,7 +26,7 @@ const userlogin=async()=>{
     }
 
     try{
-      let res=await fetch(`https://mock-server-wxg2.onrender.com/User`,{
+      let res=await fetch(`https://glorious-robe-calf.cyclic.app/User`,{
       method:"GET",
       headers:{
         "Content-Type":"application/json",

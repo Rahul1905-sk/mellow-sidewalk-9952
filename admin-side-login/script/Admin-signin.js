@@ -13,7 +13,7 @@ let sendData = async () => {
     MailId,
     Pass,
   };
-  let promise = await fetch("https://mock-server-wxg2.onrender.com/admin_data", {
+  let promise = await fetch("https://glorious-robe-calf.cyclic.app/admin_data", {
     method: "POST",
     body: JSON.stringify(dataToSend),
     headers: {
@@ -24,7 +24,7 @@ let sendData = async () => {
 const validate = async (mail, pass) => {
   let MailId;
   let Pass;
-  let promise = await fetch("https://mock-server-wxg2.onrender.com/admin_data");
+  let promise = await fetch("https://glorious-robe-calf.cyclic.app/admin_data");
   let data = await promise.json();
   data.forEach((el) => {
     MailId = el.MailId;
@@ -59,7 +59,7 @@ resetPass.onclick = async () => {
       Pass: inputPass,
     };
 
-    let res = await fetch (`https://mock-server-wxg2.onrender.com/admin_data/1`, {
+    let res = await fetch (`https://glorious-robe-calf.cyclic.app/admin_data/1`, {
       method: "PATCH",
       body: JSON.stringify(dataToSend),
       headers: {

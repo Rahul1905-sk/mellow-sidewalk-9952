@@ -12,7 +12,7 @@ navbardiv.innerHTML = navbar();
 
 
 
-let url="https://mock-server-wxg2.onrender.com/mensjacket"
+let url="https://glorious-robe-calf.cyclic.app/mensjacket"
 
 
 

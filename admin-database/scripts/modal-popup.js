@@ -47,7 +47,7 @@ addNewProducts.onclick = async () => {
 
   };
 
-  let res = await fetch(`https://mock-server-wxg2.onrender.com/${category}`, {
+  let res = await fetch(`https://glorious-robe-calf.cyclic.app/${category}`, {
     method: "POST",
     body: JSON.stringify(dataToSend),
     headers: {
