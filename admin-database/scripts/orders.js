@@ -1,5 +1,5 @@
 const getOrdersData = async () => {
-  let res = await fetch(`https://mock-server-wxg2.onrender.com/order_details`);
+  let res = await fetch(`https://glorious-robe-calf.cyclic.app/order_details`);
   let data = await res.json();
   appendOrdersData(data);
 };

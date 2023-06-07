@@ -1,20 +1,20 @@
 
 // Resources
-  // https://mock-server-wxg2.onrender.com/mensjacket
-  // https://mock-server-wxg2.onrender.com/mensshirt 
-  // https://mock-server-wxg2.onrender.com/menst-shirt
-  // https://mock-server-wxg2.onrender.com/mensjeans
-  // https://mock-server-wxg2.onrender.com/menstrousers
-  // https://mock-server-wxg2.onrender.com/womensjacket
-  // https://mock-server-wxg2.onrender.com/womensshirt
-  // https://mock-server-wxg2.onrender.com/womenstop
-  // https://mock-server-wxg2.onrender.com/womensjeans
-  // https://mock-server-wxg2.onrender.com/womenstrousers
-  // https://mock-server-wxg2.onrender.com/caps
-  // https://mock-server-wxg2.onrender.com/sliders
-  // https://mock-server-wxg2.onrender.com/mobilecovers
-  // https://mock-server-wxg2.onrender.com/mensshoes
-  // https://mock-server-wxg2.onrender.com/womensshoes
+  // https://glorious-robe-calf.cyclic.app/mensjacket
+  // https://glorious-robe-calf.cyclic.app/mensshirt 
+  // https://glorious-robe-calf.cyclic.app/menst-shirt
+  // https://glorious-robe-calf.cyclic.app/mensjeans
+  // https://glorious-robe-calf.cyclic.app/menstrousers
+  // https://glorious-robe-calf.cyclic.app/womensjacket
+  // https://glorious-robe-calf.cyclic.app/womensshirt
+  // https://glorious-robe-calf.cyclic.app/womenstop
+  // https://glorious-robe-calf.cyclic.app/womensjeans
+  // https://glorious-robe-calf.cyclic.app/womenstrousers
+  // https://glorious-robe-calf.cyclic.app/caps
+  // https://glorious-robe-calf.cyclic.app/sliders
+  // https://glorious-robe-calf.cyclic.app/mobilecovers
+  // https://glorious-robe-calf.cyclic.app/mensshoes
+  // https://glorious-robe-calf.cyclic.app/womensshoes
 
 
 
@@ -63,18 +63,18 @@ if(username!=null && useremail!=null && usernum!=null){
   document.getElementById("loginid").style.display="block";
 }
 
- let url_a="https://mock-server-wxg2.onrender.com/mensjacket";
-  let url1 ="https://mock-server-wxg2.onrender.com/menst-shirt";
-  let url2 ="https://mock-server-wxg2.onrender.com/mensshirt";
+ let url_a="https://glorious-robe-calf.cyclic.app/mensjacket";
+  let url1 ="https://glorious-robe-calf.cyclic.app/menst-shirt";
+  let url2 ="https://glorious-robe-calf.cyclic.app/mensshirt";
 //////////////////////////////////////////////////////////////////////////////////////////
-let url_wa="https://mock-server-wxg2.onrender.com/womensjeans";
-  let url3 = "https://mock-server-wxg2.onrender.com/womenstop";
-  let url4 ="https://mock-server-wxg2.onrender.com/womensshirt";
+let url_wa="https://glorious-robe-calf.cyclic.app/womensjeans";
+  let url3 = "https://glorious-robe-calf.cyclic.app/womenstop";
+  let url4 ="https://glorious-robe-calf.cyclic.app/womensshirt";
 //////////////////////////////////////////////////////////////////////////////////////////
-let url5="https://mock-server-wxg2.onrender.com/mobilecovers";
+let url5="https://glorious-robe-calf.cyclic.app/mobilecovers";
 
 //////////////////////////////////////////////////////////////////////////////////////////
-let url6="https://mock-server-wxg2.onrender.com/womensjacket";
+let url6="https://glorious-robe-calf.cyclic.app/womensjacket";
 
 //////////////////////////////////////////////////////////////////////////////////////////
 let m_arr=[];
