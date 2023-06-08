@@ -8,7 +8,11 @@ let navbardiv = document.querySelector("#navbar");
 navbardiv.innerHTML = navbar();
 
 let cartlength=JSON.parse(localStorage.getItem("cart"));
-document.getElementById("cart_no").innerText=cartlength.length;
+// document.getElementById("cart_no").innerText=cartlength.length;
+// document.getElementById("cart_no").innerText=cartlength.length;
+
+console.log('cartlength',cartlength)
+
 
 let url="https://glorious-robe-calf.cyclic.app/womensjacket"
 
