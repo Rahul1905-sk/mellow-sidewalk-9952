@@ -80,7 +80,7 @@ let url_wa="https://glorious-robe-calf.cyclic.app/womensjeans";
 let url5="https://glorious-robe-calf.cyclic.app/mobilecovers";
 
 //////////////////////////////////////////////////////////////////////////////////////////
-let url6="https://glorious-robe-calf.cyclic.app/womensjacket";
+let url6="https://glorious-robe-calf.cyclic.app/womensjacket" ;
 
 //////////////////////////////////////////////////////////////////////////////////////////
 let m_arr=[];
