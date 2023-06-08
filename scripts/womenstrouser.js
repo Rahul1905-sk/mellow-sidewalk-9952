@@ -5,7 +5,7 @@ let footerdiv = document.querySelector("#footer");
 footerdiv.innerHTML = footerSection ()
 
 let navbardiv = document.querySelector("#navbar");
-navbardiv.innerHTML = navbar();
+navbardiv.innerHTML = navbar() ;
 
  
 let cartlength=JSON.parse(localStorage.getItem("cart"));
