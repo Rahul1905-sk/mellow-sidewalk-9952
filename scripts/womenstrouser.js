@@ -5,10 +5,15 @@ let footerdiv = document.querySelector("#footer");
 footerdiv.innerHTML = footerSection ()
 
 let navbardiv = document.querySelector("#navbar");
-navbardiv.innerHTML = navbar();
+navbardiv.innerHTML = navbar() ;
 
+ 
 let cartlength=JSON.parse(localStorage.getItem("cart"));
-document.getElementById("cart_no").innerText=cartlength.length;
+if(cartlength) {
+  document.getElementById("cart_no").innerText=cartlength.length;
+} else {
+  document.getElementById("cart_no").innerText= 0;
+} 
 
 let url="https://glorious-robe-calf.cyclic.app/womenstrousers"
 
