@@ -76,7 +76,7 @@ function navbar()
               
          </div>
         </li>
-        <li><a href="./Womensjacket.html">WOMEN</a>
+        <li><a href="./womensjacket.html">WOMEN</a>
             <div id="logo_sub_menu2">
                 <div id="sub_menu_item"><ul>
                 <li><a href="#"><h5>TopWear</h5></a></li>
